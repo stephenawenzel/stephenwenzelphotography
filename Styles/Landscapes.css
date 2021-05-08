@@ -1,0 +1,351 @@
+@media only screen and (max-width: 576px){
+    .site-title {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .site-subtitle {
+        font-weight: bold;
+    }
+
+    .navbar {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+    }
+
+    .navbar-collapse {
+        width: 80vw;
+        border: #2A3027 0.5vh solid;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .nav-item {
+        color: #2A3027;
+        border-bottom: #2A3027 0.1vh solid;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+      }
+
+      .dropdown-menu {
+        border: none;
+      }
+
+      .navbar-toggler{
+          background-color: #2A3027;
+          padding: 1vh;
+          margin-bottom: 2vh;
+          width: 40vw;
+      }
+
+      .footer-button {
+          padding: 0;
+      }
+}
+
+@media only screen and (max-width: 768px){
+
+    .social_media-row {
+        display: none;
+    }
+
+    .gallery {
+      padding-left: 7.5vw;
+      padding-right: 7.5vw;
+    }
+    
+    .site-title {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .site-subtitle {
+        font-weight: bold;
+    }
+
+    .navbar {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+    }
+
+    .navbar-collapse {
+        width: 80vw;
+        border: #2A3027 0.5vh solid;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .nav-item {
+        color: #2A3027;
+        border-bottom: #2A3027 0.1vh solid;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+      }
+
+      .dropdown-menu {
+        border: none;
+      }
+
+      .navbar-toggler{
+          background-color: #2A3027;
+          padding: 1vh;
+          margin-bottom: 2vh;
+          width: 40vw;
+      }
+
+}
+
+/*larger than large screens*/
+@media only screen and (min-width: 992px){
+    p {
+        font-size: 1.1em;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+
+.btn {
+    background-color: #2A3027;
+    color: #D0DACC;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #2A3027;
+    color: #E8B130;
+    cursor: pointer;
+}
+
+/*----------------------------Header------------------------*/
+    
+.site-header {
+    background-color: #D0DACC;
+    border-bottom: 0.5vh solid #7D9174;
+}
+
+.site-title {
+    font-size: 1.9rem;
+    font-weight: bold;
+    padding-top: 1vh;
+    color: #2A3027;
+}
+
+.site-subtitle {
+    color: #2A3027;
+    font-size: 1.0rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+#portfolio-dropdown {
+    text-shadow:0 0 1.2em #53614D;
+    color: #2A3027;
+}
+
+#landscape-portfolio {
+    text-shadow:0 0 1.2em #53614D;
+    color: #2A3027;
+}
+
+/*I determined how to customize the navbar toggler using the following two websites:
+    https://www.geeksforgeeks.org/how-to-change-hamburger-toggler-color-in-bootstrap/
+    and
+    https://github.com/yui/yuicompressor/issues/274
+*/
+          
+.custom-toggler .navbar-toggler {
+    border-color: #2A3027;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(208, 218, 204, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar{
+    background-color: #D0DACC;
+}
+
+    .nav-item {
+      text-align: center;
+    }
+
+    .nav-link {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #2A3027;
+    }
+
+    .nav-link:hover {
+        text-shadow:0 0 1.2em #53614D;
+        color: #2A3027;
+    }
+
+.dropdown-menu {
+    background-color: #D0DACC;
+}
+
+.dropdown-item {
+    text-align: center;
+    font-weight: bold;
+}
+
+.dropdown-item:hover {
+    text-shadow:0 0 1.2em #53614D;
+    color: #2A3027;
+    background-color: #D0DACC;
+}
+
+/*Social Media - Aside*/
+#social_media {
+    position:fixed;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: center;
+    background-color: #53614D;
+    padding: 0.25vh;
+    top:3vh;
+    left: 85vw;
+    border-radius: 1.5vh;
+    z-index: 30;
+  }
+
+  #social_media i {
+    padding: 0.75vh;
+    text-align: center;
+    font-size: 1.5em;
+    color: #D0DACC;
+  }
+  
+  #social_media i:hover{
+    cursor:pointer;
+    color: #E8B130
+  }
+
+
+
+/*-------------------------Main------------*/
+/*Page Title*/
+.page-title {
+    color: #D0DACC;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsla(100, 10%, 17%, 0.8);
+    background-blend-mode:multiply;
+}
+
+.page-title .btn {
+    background-color: #2A3027;
+    color: #D0DACC;
+    font-weight: bold;
+    /*This is different than how it is on other pages.
+        I specifically do this so that the page title height does not 
+        change on hover!*/
+    border: 0.1em #2A3027 solid;
+}
+
+.page-title .btn:hover {
+    background-color: #2A3027;
+    color: #E8B130;
+    cursor: pointer;
+    /*This is different than how it is on other pages.*/
+    border: 0.1em #E8B130 solid;
+}
+
+/*Gallery---------------*/
+
+.gallery {
+    background-color: #2A3027;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    overflow: auto;
+} 
+
+.gallery-img {
+    max-width: 100%;
+    padding-bottom: 2vh;
+}
+
+/*----------------------------Footer------------------------*/
+
+footer .btn {
+    background-color: #2A3027;
+    color: #D0DACC;
+    font-weight: bold;
+}
+
+footer .btn:hover {
+    background-color: #2A3027;
+    color: #E8B130;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #D0DACC;
+    padding-top: 3vh;
+}
+
+.footer-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.footer-info {
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer-button {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 3vh;
+}
+
+/*Social Media - Footer*/
+.footer-social_media {
+    position:relative;
+    background-color: #53614D;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .footer-social_media i {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;
+    text-align: center;
+    font-size: 1.5em;
+    color: #D0DACC;
+  }
+  
+  .footer-social_media i:hover{
+    cursor:pointer;
+    color: #E8B130;
+  }
