@@ -244,24 +244,29 @@ body {
 }
 
 .side_photo {
+    width: 100%;
     height: auto;
+    box-shadow:2px 2px 1vw black;
 }
 
 .session-info {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .session_info {
     background-color: white;
-    box-shadow:2px 2px 2vw black;
+    box-shadow:2px 2px 1vw black;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    font-weight: bold;
+}
+
+h3 {
     font-weight: bold;
 }
 

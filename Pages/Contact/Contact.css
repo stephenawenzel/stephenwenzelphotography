@@ -52,10 +52,6 @@
           margin-bottom: 2vh;
           width: 40vw;
     }
-
-    .form-group {
-        background-color: red;
-    }
 }
 
 @media only screen and (max-width: 992px){
