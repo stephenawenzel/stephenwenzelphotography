@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <!-- Link to your custom stylesheet. Any non-Bootstrap styles you create go in this stylesheet. You can create new classes and IDs, or add new rules for classes that already exist in Bootstrap. Any rules you put in your custom stylesheet will override any styling applied to any elements of the same name in Bootstrap, as long as your custom stylesheet link comes AFTER your Bootstrap CSS link, the way it does here. -->
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
     <!--Copyright notice when clicking image-->
     <script language="JavaScript" Type="text/javascript">
@@ -41,11 +41,11 @@
 
                 <nav class="collapse navbar-collapse pb-1 pt-1" id="sawnavbar">
                     <ul class="navbar-nav justify-content-around">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a> <!--DON"T USE THE BACKSLASH AT THE FRONT!-->
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/About.html">About</a>
+                            <a class="nav-link" href="/pages/about.html">About</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Portfolio</a>
@@ -60,14 +60,17 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://stephenawenzel.github.io/Pages/Sessions.html">Sessions</a>
+                            <a class="nav-link" href="/pages/sessions.html">Sessions</a>
                         </li>
                         <!--This one is just a link to another website hosted elsewhere.-->
                         <li class="nav-item">
                             <a class="nav-link" href="https://stephenwenzelphotography.pixieset.com/" target="_blank">Galleries</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://stephenawenzel.github.io/Pages/Contact.html">Contact</a>
+                            <a class="nav-link" href="https://forms.gle/ZwwHfHKm2RY9txRr9" target="_blank">Contact</a>
+                            <!-- Update this when you have someone to make it usable
+                            <a class="nav-link" href="/pages/contact.html">Contact</a>
+                            -->
                         </li>
                     </ul>
                 </nav>
@@ -112,21 +115,32 @@
                     NC-Based Photographer | Portrait Photography
                 </p>
             </article>
-            <a href="https://stephenawenzel.github.io/Pages/Contact.html" role="button" class="btn btn-info col-7 col-sm-4 mb-3" target="_blank"><i>Let's get creative.</i></a>
+            <a href="/pages/sessions.html" role="button" class="btn btn-info col-7 col-sm-4 mb-3" target="_blank"><i>Let's get creative.</i></a>
             <article class="col-12 col-sm-9">
                 <p class="col-12 col-sm-12 text-center pb-1">
                     Scroll down to see what other people have to say!
                 </p>
             </article>
         </section>
+        
+        <section id="features" class="row pt-3 pb-3 feature_background_image bg-image" style="background-image: url(https://drscdn.500px.org/photo/1039207022/m%3D900/v2?sig=693296c3893d4c9c1188c7909b57706ebdf1d7acbdfef1987eedf1d6ecf11641);">
+            <img class="feature_img col-11 col-sm-2" src="/images/folkmoot_logo_300.png" onMouseDown="popupMsg('Copyright Folkmoot USA')">
+            <section class="feature_info col-11 col-sm-8 text-center">
+                <p class="col-11 col-sm-12 feature_text">I've been part of Folkmoot since I was born, with my parents meeting during the festival back in the 1990's. I have volunteered in many ways since then, and in 2018 I began capturing iconic moments during their Folkmoot International Dance Festival hosted each summer in Waynesville, NC.
+                </p>
+                <p class="col-11 col-sm-12 feature_text"><i>"Stephen Wenzel displays the talent for a photographer well above his teen years. A 2018 graduate of Tuscola High School who is headed for the University of North Carolina at Chapel Hill, Stephen literally grew up in Folkmoot."
+                    <br>
+                    - Folkmoot, 2018
+                    </i>
+                </p>
+                <a href="https://www.folkmoot.org/meet-the-2021-summerfest-performers/" role="button" class="btn btn-info col-12 col-sm-5 mb-3" target="_blank">Folkmoot USA - Stephen Wenzel</a>
+            </section>
+        </section>
 
-        <section class="row justify-content-center text-center" id="Testimonials">
-            <!--I was unable to create the parallax effect without having many problems 
-                with the mobile view, despite my efforts of using media quieries.-->
-            <article class="col-12 test-spacer"></article>
+        <section class="row justify-content-center text-center">
 
             <!--Alex, upload "20191204_AlexBaker-1.jpg" when 500px allows you to upload more photos. Add to test_text-container-->
-            <article class="test_image-container col-sm-12 col-md-12 col-lg-6">
+            <article class="test_image-container col-12 col-sm-12 col-md-12 col-lg-6">
                 <img class="test_image-vertical" src="https://drscdn.500px.org/photo/1038667203/m%3D900/v2?sig=d8526e4c77606dad9588431d39fcefec9046633011205cf6573433016ad795e5" onMouseDown="popupMsg('Copyright Stephen Wenzel ©2021')">
             </article>
             <article class="test_text-container col-12 col-sm-12 col-lg-6 test_text-image bg-image" style="background-image: url(https://drscdn.500px.org/photo/1038990038/m%3D900/v2?sig=6d6bde0899f413ffbd8c9e9992acd5da04ee991f987a9b22b66f5243db7f7960);">
@@ -153,7 +167,9 @@
                     <p class="test-text">- Tyrell C.</p>
                 </div>
             </article>
+        </section>
 
+        <section class="row justify-content-center text-center">
             <!--Rachel, upload "20210416_WorleyRachel_Free-16.jpg" when 500px allows you to upload more photos. Add to test_text-container-->
             <article id="Rachel" class="test_image-container col-12 col-sm-12 col-lg-6">
                 <img class="test_image-vertical" src="https://drscdn.500px.org/photo/1038667205/m%3D900/v2?sig=78d850bbc44ba127ea5fab7d7158bbe8ef90c421042930a43316602d0a4637ed" onMouseDown="popupMsg('Copyright Stephen Wenzel ©2021')">
@@ -207,7 +223,7 @@
                 <p>Coded by Stephen Wenzel (HTML5, CSS3) ©2021</p>
             </article>           
             <article class="col-10 col-sm-10 pb-3 footer-button">
-                <a href="https://stephenawenzel.github.io/stephenwenzelphotography/Pages/Contact.html" role="button" class="btn btn-info col-8" target="_blank">Schedule a Session</a>
+                <a href="/pages/sessions.html" role="button" class="btn btn-info col-8" target="_blank">Schedule a Session</a>
             </article>       
             <article class="footer-social_media col-12 col-sm-12">
                 <a href="https://500px.com/p/stephenwenzelphotography?view=photos" target="_blank"><i id="500px" class="fab fa-500px"></i></a>
