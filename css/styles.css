@@ -7,14 +7,13 @@
     p {
         font-size: 1.2em;
     }
-    
-    .test_text-container {
-        height: 65vh !important;
-        margin: 0 !important;
-    }
 
     .test_image-container {
         height: 70vh !important;
+    }
+
+    .tt_sub-cont {
+        height: 90%;
     }
 }
 
@@ -337,7 +336,11 @@ body {
 .tt_sub-cont {
     background-color: hsla(0, 100%, 100%, 0.6);
     box-shadow:2px 2px 2vw black;
-}
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+} 
 
 .test_image-container {
     display: flex;
