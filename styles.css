@@ -314,6 +314,10 @@ body {
     font-weight: bold;
 }
 
+.feature_img {
+    height: auto;
+}
+
 
 /*Testimonials -----------*/
 .test_text-container {
