@@ -297,7 +297,7 @@ body {
     background-blend-mode:overlay;
 }
 
-#features {
+.features {
     display: flex;
     flex-flow: column wrap;
     justify-items: center;
@@ -355,6 +355,15 @@ body {
     width: auto;
     box-shadow:2px 2px 2vw black;
     max-height: 80%;
+}
+
+/*Other Clients ---------------*/
+#other_clients {
+    background-color: #2A3027;
+}
+
+#other_clients p {
+    color: white;
 }
 
 /*----------------------------Footer--------------------------------------------------------------------------------*/
