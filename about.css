@@ -169,6 +169,7 @@ body {
 
 .name {
     text-transform: lowercase;
+    color: #8f918e;
 }
   
     .name span {
@@ -178,7 +179,6 @@ body {
 .site-title {
     font-size: 1.9rem;
     padding-top: 1vh;
-    color: #8f918e;
 }
 
 .navbar-collapse {
