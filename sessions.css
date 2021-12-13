@@ -95,6 +95,10 @@
         font-size: 1.2em;
     }     
 
+    ul {
+        font-size: 1.05em;
+    }
+
     a {
         font-size: 1.2em;
     }
@@ -254,6 +258,13 @@ body {
     justify-content: center;
     align-items: center;
 } 
+
+.list {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+}
 
 .sign_up_button {
     background-color: #D0DACC;
