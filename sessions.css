@@ -264,17 +264,14 @@ body {
     flex-flow: column wrap;
     align-content: center;
     justify-content: center;
-    background-color: red;
 }
 
     .list-container ul {
-        background-color: green;
         margin: 0 auto;
         padding: 0;
     }
 
         .list-container li {
-            background-color: blue;
         }
 
 .sign_up_button {
