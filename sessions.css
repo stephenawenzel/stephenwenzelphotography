@@ -259,7 +259,7 @@ body {
     align-items: center;
 } 
 
-.list {
+.list-container {
     display: flex;
     flex-flow: column wrap;
     align-content: center;
