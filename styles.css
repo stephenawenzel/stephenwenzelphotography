@@ -99,6 +99,18 @@
         font-size: 1.2em;
     }     
 
+    .test_text-container {
+        padding-right: 8vw;
+    }
+
+    .test_text {
+        font-size: 1.5em;
+    }
+
+    .test-text {
+        font-size: 1.5em;
+    }
+
     a {
         font-size: 1.2em;
     }
