@@ -1,6 +1,5 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -11,15 +10,11 @@
     <!-- Link to Bootstrap 4 CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-    <!--Google Fonts - Cormorant Garamond (Regular 400)-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
-
-    <!--Google Fonts - Abel (Regular 400)-->
+    <!--Google Fonts - Asar (Regular 400)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=EB+Garamond&family=Playfair+Display&family=Sora:wght@200&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Lora&display=swap" rel="stylesheet">    
+
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
@@ -31,174 +26,158 @@
         function popupMsg(theMsg) {
         alert(theMsg);
         }
-        </script>
+    </script>
 </head>
-
-<body>
-
-    <header class="site-header container-fluid">
-        <article class="row pt-2 pb-2">
-            <h1 class="name site-title col-12 col-sm-12">
-                <span>s</span>tephen<span>w</span>enzel<span>p</span>hotography
-            </h1>
-            <nav class="col-12 col-sm-12 navbar navbar-expand-md">
-                <button class="col-12 col-sm-7 navbar-toggler custom-toggler p-1" type="button" data-toggle="collapse" data-target="#sawnavbar" aria-controls="sawnavbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <nav class="col-12 col-sm-12 collapse navbar-collapse pb-1 pt-1" id="sawnavbar">
-                    <ul class="col-12 col-sm-12 navbar-nav p-0">
-                        <li class="col-12 col-md-2 nav-item">
-                            <a class="nav-link" href="index.html">Home</a> <!--DON"T USE THE BACKSLASH AT THE FRONT!-->
-                        </li>
-                        <li class="col-12 col-md-2 nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="col-12 col-md-2 nav-item">
-                            <a class="nav-link" href="https://stephenwenzelphotography.pixieset.com/portfolio/" target="_blank">Portfolio</a>
-                        </li>
-                        <li class="col-12 col-md-2 nav-item">
-                            <a class="nav-link" href="sessions.html">Sessions</a>
-                        </li>
-                        <!--This one is just a link to another website hosted elsewhere.-->
-                        <li class="col-12 col-md-2 nav-item">
-                            <a class="nav-link" href="https://stephenwenzelphotography.pixieset.com/" target="_blank">Galleries</a>
-                        </li>
-                        <li class="col-12 col-md-2 nav-item">
-                            <a class="nav-link" href="https://forms.gle/ZwwHfHKm2RY9txRr9" target="_blank">Contact</a>
-                            <!-- Update this when you have someone to make it usable
-                            <a class="nav-link" href="/pages/contact.html">Contact</a>
-                            -->
-                        </li>
-                    </ul>
-                </nav>
+<body class="container-fluid">
+    <header class="row pt-2 pb-2">
+        <article class="col-12 col-sm-12 sig-box">
+            <img class="sig" src="white_signature.png" onMouseDown="popupMsg('Unable to access image functionalities')">
+            <p class="col-12 col-sm-12">PHOTOGRAPHY</p>
+        </article>
+        <nav class="col-12 col-sm-12 col-lg-12 navbar navbar-expand">
+            <div id="menu-button-container" class="col-12 col-sm-12">
+                <a class="col-12 col-sm-12" id="menu" type="button" data-toggle="collapse" data-target="#sawnavbar" aria-controls="sawnavbar" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></a>
+            </div>
+            <nav class="collapse navbar-collapse col-lg-12" id="sawnavbar">
+                <ul class="navbar-nav col-12 col-sm-12 col-lg-12">
+                    <li class="col-12 col-sm-2 nav-item">
+                        <a class="nav-link" href="index.html">Home</a> <!--DON"T USE THE BACKSLASH AT THE FRONT!-->
+                    </li>
+                    <li class="col-12 col-sm-2 nav-item active">
+                        <a class="nav-link" href="sessions.html">Sessions</a>
+                    </li>
+                    <li class="col-12 col-sm-2 nav-item">
+                        <a class="nav-link" href="https://stephenwenzelphotography.pixieset.com/portfolio/">Portrait Portfolio</a>
+                    </li>
+                    <!--This one is just a link to another website hosted elsewhere.-->
+                    <li class="col-12 col-sm-2 nav-item">
+                        <a class="nav-link" href="https://stephenwenzelphotography.pixieset.com/" target="_blank">Client Galleries</a>
+                    </li>
+                    <li class="col-12 col-sm-2 nav-item">
+                        <a class="nav-link" href="about.html">About Stephen</a>
+                    </li>
+                    <li class="col-12 col-sm-2 nav-item">
+                        <a class="nav-link" href="https://forms.gle/7UN4G86YSJ4xAzaY6">Contact</a>
+                    </li>
+                </ul>
             </nav>
-        </article> 
-        <aside class="row social_media-row">
-            <article class="col-12 col-sm-12">
-                <div id="social_media"> <!--This may potentially be a problem because it is not using the column class-->
-                    <a href="https://500px.com/p/stephenwenzelphotography?view=photos" target="_blank"><i id="500px" class="fab fa-500px"></i></a>
-                    <a href="https://www.instagram.com/stephenwenzelphotography/" target="_blank"><i id="Instagram" class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/stephenwenzelphotography/" target="_blank"><i id="Facebook" class="fab fa-facebook-square"></i></a>
-                    <a href="https://www.pinterest.com/stephenwenzelphotography/_saved/" target="_blank"><i id="Pinterest" class="fab fa-pinterest-square"></i></a>
-                    <a href="nature.html" target="_blank"><i class="fas fa-mountain"></i></a>
-                </div>
-            </article>
-        </aside>
+        </nav>
     </header>
 
-    <main class="container-fluid">
-        <!--Page Header-->
-        <section class="row">
-            <section class="col-12 col-sm-12 page-title pt-3 pb-3">
-                <article class="col-12 col-sm-12 mb-2">
-                    <h2 class="col-12 col-sm-12 text-center">Portrait Sessions</h2>
-                </article>
-                <article class="col-12 col-sm-12 mb-2 list-container">
-                    <ul class="col-12 col-sm-10 col-lg-4">
-                        <li class="col-12 col-sm-12 mb-1">All sessions include a private gallery, refreshments, and a free 30-minute planning session</li>
-                        <li class="col-12 col-sm-12 mb-1">Prices cover the editing process as well as travel</li>
-                        <li class="col-12 col-sm-12 mb-1">Your images will be available for download in a customized, password-protected gallery</li>
-                        <li class="col-12 col-sm-12 mb-1">You also have the option to purchase from metal, acrylic, and traditional prints</li>
-                    </ul>
-                </article>
-                <a href="https://forms.gle/UGPguZcVYVMrCDiX8" role="button" class="btn btn-info col-10 col-sm-6 col-md-4 col-lg-3 sign_up_button" target="_blank"><b>Schedule your session today!</b></a>
-            </section>
-        </section>  
-        <section class="row session-info">
-            <article class="col-12 col-sm-8 col-lg-5 mt-3 mb-3">
-                <img class="side_photo" src="https://drscdn.500px.org/photo/1039045208/m%3D900/v2?sig=42caf12e46e177569ad25afb84a84825316b9129bfcca16b422da280e1928807" onMouseDown="popupMsg('Copyright Stephen Wenzel ©2021')" alt="Graduation session examples">
+    <main class="row">
+        <section class="intro col-12 col-sm-12">
+            <h2 class="col-12 col-sm-12 mt-5">Types of Sessions</h2>
+            <p class="col-12 col-sm-12" style="color: red;"><span>( </span><i>Scroll down to see session details!</i><span> )</span></i></p>
+            <p class="col-12 col-sm-12 col-md-7">10% of proceeds are dontated to Folkmoot, an organization that fosters the vibrancy of many cultures into one community. If you would like to learn more about Folkmoot, please click <br><a href="https://www.folkmoot.org/" target="_blank">this link!</a></p>
+            <article class="col-12 col-sm-12 col-md-11">
+                <h3 class="session col-12 col-sm-12" style="color: #E8B130;"><b>Graduation Sessions</b></h3>
             </article>
-            <article class="session_info col-11 col-sm-11 col-lg-6 mt-4 mb-4">
-                <h3 class="col-12 col-sm-12 mt-2 mb-3 text-center">The Grad</h3>
-                <p class="col-12 col-sm-12 text-center">
-                    <i>90 minutes, 30 images, up to 4 locations</i>
-                    <br>
-                    This session is for high school, college, and professional school graduates. Locaitons can include university
-                    landmarks, restaurants, apartments, and anything else that was meaningful to your experience.
-                </p>
-                <p class="col-12 col-sm-12 text-center">
-                    <b>Individuals:</b> $150
-                    <br>
-                    <b>Groups:</b> $100 per person             
-                </p>
-                <a href="https://forms.gle/UGPguZcVYVMrCDiX8" role="button" class="btn btn-info col-8 col-sm-6 col-md-4" target="_blank">Contact</a>
-            </article>
-        </section>
-        <section class="row session-info">
-            <article class="col-12 col-sm-8 col-lg-5 mt-3 mb-3">
-                <img class="side_photo" src="https://drscdn.500px.org/photo/1039045179/m%3D900/v2?sig=3d54cd11f4676fa3ad2df3c2e8d68faf02e8454150a8d5ccee150775b9683296" onMouseDown="popupMsg('Copyright Stephen Wenzel ©2021')" alt="Individual session examples">
-            </article>
-            <article class="session_info col-11 col-sm-11 col-lg-6 mt-4 mb-4">
-                <h3 class="col-12 col-sm-12 mt-2 mb-3 text-center">The Talent</h3>
-                <p class="col-12 col-sm-12 text-center">
-                    <i>2 hours, 30 images, up to 4 locations</i>
-                    <br>
-                    In this session, I will capture your talents in a unique way in order to highlight your passion and joy for the activity. While it is meant for an individual,
-                    you may also invite others who share your talent, such as a sports team or a creative design team. 
-                </p>
-                <p class="col-12 col-sm-12 text-center">
-                    <b>Individuals:</b> $200<br>
-                    <b>Group of 2:</b> $110 each = $220 total<br>
-                    <b>Group of 3:</b> $80 each = $240 total<br>
-                    <b>Group of 4 or more:</b> $50 each
-                </p>
-                <a href="https://forms.gle/UGPguZcVYVMrCDiX8" role="button" class="btn btn-info col-8 col-sm-6 col-md-4" target="_blank">Contact</a>
-            </article>
-        </section>
-        <section class="row session-info pb-3">
-            <article class="col-12 col-sm-8 col-lg-5 mt-3 mb-3">
-                <img class="side_photo" src="https://drscdn.500px.org/photo/1039045219/m%3D900/v2?sig=182b563035d5ea5f19811e5d97045051316ab01326d80706b3741a6b95258d97" onMouseDown="popupMsg('Copyright Stephen Wenzel ©2021')" alt="Event session examples">
-            </article>
-            <article class="session_info col-11 col-sm-11 col-lg-6 mt-4 mb-4">
-                <h3 class="col-12 col-sm-12 mt-2 mb-3 text-center">The Event</h3>
-                <p class="col-12 col-sm-12 text-center">
-                    <i>20 images per hour</i><br>
-                    This session is for weddings, private events, and festivals. 
-                    Pricing for this type of session varies depending the event. 
-                    Contact me below for more information regarding your event.                     
-                </p>
-                <p class="col-12 col-sm-12 text-center">
-                    Average cost per hour:<br>
-                    <b>Small Events -</b> $135<br>
-                    <b>Large Events -</b> $210
-                </p>
-                <a href="https://forms.gle/UGPguZcVYVMrCDiX8" role="button" class="btn btn-info col-8 col-sm-6 col-md-4" target="_blank">Contact</a>
-            </article>
-        </section>
-        <section class="row session-info mt-2 mb-2">
-            <article class="col-12 col-sm-8 col-lg-5 mt-3 mb-3">
-                <img class="side_photo" src="https://drscdn.500px.org/photo/1039045188/m%3D900/v2?sig=0e8a74242db59a6537a465791033e6fd6f0e74e6ba72698121bb4f216fdc9096" onMouseDown="popupMsg('Copyright Stephen Wenzel ©2021')" alt="Mini session examples">
-            </article>
-            <article class="session_info col-11 col-sm-11 col-lg-6 mt-4 mb-4">
-                <h3 class="col-12 col-sm-12 mt-2 mb-3 text-center">The Mini</h3>
-                <p class="col-12 col-sm-12 text-center">
-                   <i>45-minutes, 12 images, up to 2 locations</i>
-                   <br>
-                   This is designed for those who need an extra short session such as for business headshots and social media posts.
-                </p>
-                <p class="col-12 col-sm-12 text-center">
-                    <b>Individuals:</b> $75<br>
-                    <b>Groups:</b> $50 per person
-                </p>
-                <a href="https://forms.gle/UGPguZcVYVMrCDiX8" role="button" class="btn btn-info col-8 col-sm-6 col-md-4" target="_blank">Contact</a>
-            </article>
-        </section>
-    </main> 
 
-    <footer class="container-fluid footer pt-3">
-        <section class="row footer-content">
-            <article class="col-11 col-sm-11 footer-info">
-                <p class="name col-12 col-sm-12">
-                    <span>s</span>tephen<span>w</span>enzel<span>p</span>hotography
-                </p>
-                <p>Raleigh, Durham, Chapel Hill, & Asheville, NC</p>
-                <p>Coded by Stephen Wenzel (HTML5, CSS3) ©2021</p>
-            </article>           
-            <article class="col-10 col-sm-10 pb-3 footer-button">
-                <a href="sessions.html" role="button" class="btn btn-info col-8 col-sm-6" target="_blank">Schedule a Session</a>
-            </article>       
-            <article class="footer-social_media col-12 col-sm-12">
+            <article class="col-12 col-sm-12 col-md-11">
+                <h3 class="session col-12 col-sm-12" style="color: #E8B130;"><b>Career Sessions</b></h3>
+            </article>
+
+            <article class="col-12 col-sm-12 col-md-11">
+                <h3 class="session col-12 col-sm-12" style="color: #E8B130;"><b>Casual, Creative Sessions</b></h3>
+            </article>
+
+            <article class="col-12 col-sm-12 col-md-11">
+                <h3 class="session col-12 col-sm-12" style="color: #E8B130;"><b>Private Event Sessions</b></h3>
+            </article>
+
+            <article class="col-12 col-sm-12 col-md-11">
+                <h2 class="col-12 col-sm-12">What is included?</h2>
+                <p class="col-12 col-sm-12">All sessions include a 20-minute preparation meeting, a non-alcoholic beverage of your choice, and a maximum of 3 locations of your choosing.</p>
+                <p class="col-12 col-sm-12">Selects are distributed in 3 days or less, and edited pictures are returned after a week, guaranteed.</p>
+                <p class="col-12 col-sm-12">There is also an option to purchase from metal, acrylic, and traditional prints.</p>
+            </article>
+
+            <article class="col-12 col-sm-12 col-md-11">
+                <h2 class="col-12 col-sm-12 mt-5">What is the process like?</h2>
+                <p class="col-12 col-sm-12">Once you send in your request, I will get back to you in less than 24 hours.</p>
+                <p class="col-12 col-sm-12">Then, we will schedule your preparation meeting so we can talk about what you would like based on my portfolio.</p>
+                <p class="col-12 col-sm-12">Then we will meet at the locations you picked for your session!</p>
+                <p class="col-12 col-sm-12">After your session, I will send you all the images to choose your selects from. Once you choose them, I will get them edited and distributed to you in a <span style="font-style:italic;">customized, private gallery</span> in less than 3 days after your session.</p>
+            </article> 
+
+        </section>
+        <div class="col-12 col-sm-12 img_container-background_color">
+            <div class="col-12 col-sm-12 img_container1 img_ad"></div>
+        </div> 
+        <section class="description col-12 col-sm-12">
+            <h2 class="col-12 col-sm-12">Graduation Sessions</h2>
+            <p class="col-12 col-sm-12">Any on-campus locations within 30 miles of Chapel Hill, NC</p>
+            <p class="col-12 col-sm-12"><i>Contact for other locations!</i></p>
+            <a href="https://forms.gle/YbyXTxD9mLaBsZpD6" role="button" class="contact_session_btn btn btn-info col-5 col-sm-5 col-lg-3" target="blank">CONTACT</a>  
+            <h4 class="col-12 col-sm-12 pt-5">Individual Package A ($150)</h4>
+            <p class="col-12 col-sm-12">60 minutes of shooting, 25-40 images.</p>
+            <h4 class="col-12 col-sm-12 pt-5">Individual Package B ($200)</h4>
+            <p class="col-12 col-sm-12">90 minutes of shooting, 35-50 images.</p>
+            <h4 class="col-12 col-sm-12 pt-5">Group Package A <br> ($100 per graduate)</h4>
+            <p class="col-12 col-sm-12">2-4 graduates, 60 minutes of shooting, 25-40 images.</p>
+            <h4 class="col-12 col-sm-12 pt-5">Group Package B <br> ($75 per graduate)</h4>
+            <p class="col-12 col-sm-12">5+ graduates, 90 minutes of shooting, 35-50 images.</p>  
+        </section>
+        <div class="col-12 col-sm-12 img_container-background_color">
+            <div class="col-12 col-sm-12 img_container2 img_ad"></div>
+        </div> 
+        <section class="description col-12 col-sm-12">
+            <h2 class="col-12 col-sm-12">Career Sessions</h2> 
+            <p class="col-12 col-sm-12">Any location(s)</p>
+            <p class="col-12 col-sm-12">Having professional pictures that represent your personal brand is a must have for developing your career and landing top jobs.</p>
+            <a href="https://forms.gle/YbyXTxD9mLaBsZpD6" role="button" class="contact_session_btn btn btn-info col-5 col-sm-5 col-lg-3" target="blank">CONTACT</a>  
+            <h4 class="col-12 col-sm-12 pt-5">Individual Package ($120)</h4>
+            <p class="col-12 col-sm-12">60 minutes of shooting, 2 traditional headshots, 2 creative headshots, 3 full-body portraits.</p>
+            <h4 class="col-12 col-sm-12 pt-5">Traditional Group Package <br> ($80 per person)</h4>
+            <p class="col-12 col-sm-12">Up to 4 people, 90 minutes of shooting</p>
+            <p class="col-12 col-sm-12">Each person gets 3 traditional headshots and 3 full-body portraits.</p>
+            <h4 class="col-12 col-sm-12 pt-5">Creative Group Package <br> ($80 per person)</h4>
+            <p class="col-12 col-sm-12">Up to 4 people, 90 minutes of shooting</p>
+            <p class="col-12 col-sm-12">Each person gets 2 traditional headshots, 1 creative headshot, 2 full-body portraits.</p>
+            <h4 class="col-12 col-sm-12 pt-5">Mixed Group Package <br> ($80 per person)</h4>
+            <p class="col-12 col-sm-12">Up to 4 people, 90 minutes of shooting</p>
+            <p class="col-12 col-sm-12">Each person gets 3 creative headshots, 3 full-body portraits.</p> 
+        </section>
+        <div class="col-12 col-sm-12 img_container-background_color">
+            <div class="col-12 col-sm-12 img_container3 img_ad"></div>
+        </div> 
+        <section class="description col-12 col-sm-12">
+            <h2 class="col-12 col-sm-12">Creative, Casual Sessions</h2> 
+            <p class="col-12 col-sm-12">Any location(s)</p>
+            <p class="col-12 col-sm-12">Do you have any creative talents such as gymnastics, painting, or even DJing? Perhaps this is the session for you!</p>
+            <p class="col-12 col-sm-12">This is also a great session for those who just want other types of photos such as couple portraits, social media posts, etc...</p>
+            <a href="https://forms.gle/YbyXTxD9mLaBsZpD6" role="button" class="contact_session_btn btn btn-info col-5 col-sm-5 col-lg-3" target="blank">CONTACT</a> 
+            <h4 class="col-12 col-sm-12 pt-5">Individual Package A ($75)</h4>
+            <p class="col-12 col-sm-12">30 minutes of shooting, 7-12 images.</p>
+            <h4 class="col-12 col-sm-12 pt-5">Individual Package B ($100)</h4>
+            <p class="col-12 col-sm-12">60 minutes of shooting, 15-20 images.</p>
+            <h4 class="col-12 col-sm-12 pt-5">Individual Package C ($150)</h4>
+            <p class="col-12 col-sm-12">90 minutes of shooting, 25-30 images.</p>
+            <h4 class="col-12 col-sm-12 pt-5">Group Package A <br> ($60 per person)</h4>
+            <p class="col-12 col-sm-12">2-4 people, 60 minutes of shooting, 15-20 images.</p>
+            <h4 class="col-12 col-sm-12 pt-5">Group Package B <br> ($40 per person)</h4>
+            <p class="col-12 col-sm-12">5+ people, 90 minutes of shooting, 25-30 images.</p>  
+        </section>
+        <div class="col-12 col-sm-12 img_container-background_color">
+            <div class="col-12 col-sm-12 img_container4 img_ad"></div>
+        </div> 
+        <section class="description col-12 col-sm-12">
+            <h2 class="col-12 col-sm-12">Private Event Sessions</h2> 
+            <p class="col-12 col-sm-12">Any location(s)</p>
+            <p class="col-12 col-sm-12">This session is perfect for parties, weddings, and ceremonies. Contact me for details!</p>
+            <a href="https://forms.gle/YbyXTxD9mLaBsZpD6" role="button" class="contact_session_btn btn btn-info col-5 col-sm-5 col-lg-3" target="blank">CONTACT</a>  
+            <h4 class="col-12 col-sm-12 pt-5">Custom Package <br> (Contact for pricing)</h4>
+            <p class="col-12 col-sm-12">Length of session and number of images varies. Generally, I will distribute 30 images to choose from per hour of shooting.</p> 
+        </section>
+    </main>
+    
+    <footer class="row footer pt-3 pb-3">
+        <section class="col-12 col-sm-12 footer-content">
+            <article class="col-12 col-sm-12 col-md-12 footer-info">
+                <p class="col-12 col-sm-12">Raleigh, Durham, Chapel Hill, & Asheville, NC</p>
+                <p class="col-12 col-sm-12">Coded by Stephen Wenzel (HTML5, CSS3) ©2022</p>
+            </article>
+            <article class="footer-social_media col-12 col-sm-12 col-md-12">
                 <a href="https://500px.com/p/stephenwenzelphotography?view=photos" target="_blank"><i id="500px" class="fab fa-500px"></i></a>
                 <a href="https://www.instagram.com/stephenwenzelphotography/" target="_blank"><i id="Instagram" class="fab fa-instagram"></i></a>
                 <a href="https://www.facebook.com/stephenwenzelphotography/" target="_blank"><i id="Facebook" class="fab fa-facebook-square"></i></a>
@@ -208,18 +187,10 @@
         </section>
     </footer>
 
-
-    <!-- NECESSARY <script> LINKS. The three <script> links below add jQuery, popper.js, and Bootstrap 4 JavaScript. These are libraries of scripts that are necessary to make Bootstrap's interactive and animated components work (e.g., dropdown menus, buttons, alerts, carousels, collapsing navbars and content areas, modals, popups, tooltips, etc). These three <script> links MUST appear in THIS ORDER; this is because both popper.js and the Bootstrap scripts rely on jQuery to work, so jQuery must load into your page first. We add these links at the bottom of the <body> element instead of in the <head> element so the scripts won't be loaded into your site until they're needed, which helps with your site's speed and functionality. -->
-
-    <!-- jQuery--this must come first! -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
-    <!-- popper.js--a library of drop-down and pop-up JavaScript scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-
-    <!-- unique Bootstrap 4 JavaScript scripts -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
-
 </html>

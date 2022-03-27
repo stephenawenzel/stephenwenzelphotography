@@ -673,10 +673,6 @@ body {
         height: 20%;
     }
 
-    .collection_background h1:hover {
-        background-color: ;
-    }
-
     /* unvisited link */
     h1 a:link {
         color: white;

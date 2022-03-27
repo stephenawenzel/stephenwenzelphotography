@@ -1,6 +1,5 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -11,15 +10,11 @@
     <!-- Link to Bootstrap 4 CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-    <!--Google Fonts - Cormorant Garamond (Regular 400)-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
-
-    <!--Google Fonts - Abel (Regular 400)-->
+    <!--Google Fonts - Asar (Regular 400)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=EB+Garamond&family=Playfair+Display&family=Sora:wght@200&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Lora&display=swap" rel="stylesheet">    
+
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
@@ -31,166 +26,134 @@
         function popupMsg(theMsg) {
         alert(theMsg);
         }
-        </script>
+    </script>
 </head>
-
-<body>
-
-    <header class="site-header container-fluid">
-        <article class="row pt-2 pb-2">
-            <h1 class="name site-title col-12 col-sm-12">
-                <span>s</span>tephen<span>w</span>enzel<span>p</span>hotography
-            </h1>
-            <nav class="col-12 col-sm-12 navbar navbar-expand-md">
-                <button class="col-12 col-sm-7 navbar-toggler custom-toggler p-1" type="button" data-toggle="collapse" data-target="#sawnavbar" aria-controls="sawnavbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <nav class="col-12 col-sm-12 collapse navbar-collapse pb-1 pt-1" id="sawnavbar">
-                    <ul class="col-12 col-sm-12 navbar-nav">
-                        <li class="col-12 col-md-2 nav-item">
-                            <a class="nav-link" href="index.html">Home</a> <!--DON"T USE THE BACKSLASH AT THE FRONT!-->
-                        </li>
-                        <li class="col-12 col-md-2 nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="col-12 col-md-2 nav-item">
-                            <a class="nav-link" href="https://stephenwenzelphotography.pixieset.com/portfolio/" target="_blank">Portfolio</a>
-                        </li>
-                        <li class="col-12 col-md-2 nav-item">
-                            <a class="nav-link" href="sessions.html">Sessions</a>
-                        </li>
-                        <!--This one is just a link to another website hosted elsewhere.-->
-                        <li class="col-12 col-md-2 nav-item">
-                            <a class="nav-link" href="https://stephenwenzelphotography.pixieset.com/" target="_blank">Galleries</a>
-                        </li>
-                        <li class="col-12 col-md-2 nav-item">
-                            <a class="nav-link" href="https://forms.gle/ZwwHfHKm2RY9txRr9" target="_blank">Contact</a>
-                            <!-- Update this when you have someone to make it usable
-                            <a class="nav-link" href="/pages/contact.html">Contact</a>
-                            -->
-                        </li>
-                    </ul>
-                </nav>
+<body class="container-fluid">
+    <header class="row pt-2 pb-2">
+        <article class="col-12 col-sm-12 sig-box">
+            <img class="sig" src="white_signature.png" onMouseDown="popupMsg('Unable to access image functionalities')">
+            <p class="col-12 col-sm-12">PHOTOGRAPHY</p>
+        </article>
+        <nav class="col-12 col-sm-12 col-lg-12 navbar navbar-expand">
+            <div id="menu-button-container" class="col-12 col-sm-12">
+                <a class="col-12 col-sm-12" id="menu" type="button" data-toggle="collapse" data-target="#sawnavbar" aria-controls="sawnavbar" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></a>
+            </div>
+            <nav class="collapse navbar-collapse col-lg-12" id="sawnavbar">
+                <ul class="navbar-nav col-12 col-sm-12 col-lg-12">
+                    <li class="col-12 col-sm-2 nav-item">
+                        <a class="nav-link" href="index.html">Home</a> <!--DON"T USE THE BACKSLASH AT THE FRONT!-->
+                    </li>
+                    <li class="col-12 col-sm-2 nav-item">
+                        <a class="nav-link" href="sessions.html">Sessions</a>
+                    </li>
+                    <li class="col-12 col-sm-2 nav-item">
+                        <a class="nav-link" href="https://stephenwenzelphotography.pixieset.com/portfolio/">Portrait Portfolio</a>
+                    </li>
+                    <!--This one is just a link to another website hosted elsewhere.-->
+                    <li class="col-12 col-sm-2 nav-item">
+                        <a class="nav-link" href="https://stephenwenzelphotography.pixieset.com/" target="_blank">Client Galleries</a>
+                    </li>
+                    <li class="col-12 col-sm-2 nav-item active">
+                        <a class="nav-link" href="about.html">About Stephen</a>
+                    </li>
+                    <li class="col-12 col-sm-2 nav-item">
+                        <a class="nav-link" href="https://forms.gle/7UN4G86YSJ4xAzaY6">Contact</a>
+                    </li>
+                </ul>
             </nav>
-        </article> 
-        <aside class="row social_media-row">
-            <article class="col-12 col-sm-12">
-                <div id="social_media"> <!--This may potentially be a problem because it is not using the column class-->
-                    <a href="https://500px.com/p/stephenwenzelphotography?view=photos" target="_blank"><i id="500px" class="fab fa-500px"></i></a>
-                    <a href="https://www.instagram.com/stephenwenzelphotography/" target="_blank"><i id="Instagram" class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/stephenwenzelphotography/" target="_blank"><i id="Facebook" class="fab fa-facebook-square"></i></a>
-                    <a href="https://www.pinterest.com/stephenwenzelphotography/_saved/" target="_blank"><i id="Pinterest" class="fab fa-pinterest-square"></i></a>
-                    <a href="nature.html" target="_blank"><i class="fas fa-mountain"></i></a>
-                </div>
-            </article>
-        </aside> 
+        </nav>
     </header>
+    
+    <main class="row">
+        <article class="img_container col-8 col-sm-6 col-md-3 mt-4 mb-4">
+            <img id="profile" src="https://drscdn.500px.org/photo/1040560161/m%3D900/v2?sig=a7e595a0b3e694284cf33a8a187e9c2f9be082e981950ef142fe741c8459becc" onMouseDown="popupMsg('Copyright Stephen Wenzel ©2021')">
+        </article> 
+        <section class="intro col-12 col-sm-12 col-lg-10">
+            <h4 class="col-12 col-sm-12 mt-4 mb-5">Nice to meet you! I'm Stephen.</h4>
+            <p class="col-12 col-sm-12 mt-5 mb-5">
+                I'm in my last semester at 
+                <a class="link" href="https://www.unc.edu/" target="blank">UNC Chapel Hill</a>
+                studying biology, chemistry, and neuroscience. I'll be graduating in May, looking for a job as a research
+                technician or something in healthcare. My goal is to become an eye doctor, ophthalmology, and to live in the Asheville area where I grew up. 
+            </p>
 
-    <main class="container-fluid">
-        <!--Page Header-->
-        <section class="row">
-            <section class="col-12 col-sm-12 page-title pt-3 pb-2">
-                <article class="col-12 col-sm-12">
-                    <h2 class="col-12 col-sm-12 text-center">Stephen Wenzel</h2>
-                </article>
-                <article class="subtitle col-12 col-sm-12 text-center">
-                    <p>NC-Based Photographer | <span><i>Professional Portraits with a Creative Flair</i></span></p>
-                </article>
-            </section>
-        </section>
-        <section class="row">
-            <article class="img_container col-6 col-sm-4 col-md-3 mt-4 mb-4">
-                <img src="https://drscdn.500px.org/photo/1040560161/m%3D900/v2?sig=a7e595a0b3e694284cf33a8a187e9c2f9be082e981950ef142fe741c8459becc" onMouseDown="popupMsg('Copyright Stephen Wenzel ©2021')">
+            <h4 class="col-12 col-sm-12 mt-2 mb-2">The Roots of my Photography</h4>
+            <p class="col-12 col-sm-12 mt-5 mb-5">
+                I owe my adventurous and creative spirit to exploring the outdoors. There's nothing quite like hiking along the Blue Ridge Parkway in the springtime. 
+                I started doing wildlife photography because of this, and I also started a nature club at Tuscola High School in Waynesville, NC called the Naturalist Club. 
+                Since then, I've travelled to Florida, Nevada, New Orleans, and Quebec to do nature photography.
+                <br>
+                You can view some of my photos through <a class="link" href="nature.html">this link</a>.
+            </p>
+            <article class="img_container col-12 col-sm-6 col-md-3 mt-4 mb-4">
+                <img src="https://drscdn.500px.org/photo/1019351742/m%3D900/v2?sig=956cf91167a7e95f53f957a859976737675a14036e4c672eb79fb68164cecdc2" onMouseDown="popupMsg('Copyright Stephen Wenzel ©2021')">
             </article> 
-            <article class="intro col-12 col-sm-12">
-                <h3 class="col-12 col-sm-12 mt-4 mb-5">Nice to meet you! I'm Stephen!</h3>
-                <p class="col-12 col-sm-12 col-md-10 mt-5 mb-5">
-                    I've been interested in discovering new things ever since I was young, including various foods and wildlife. My first sense of
-                    photography, rather than using my phone, was through my grandfather's old Canon T4 Rebel back in 2015. I adventured the
-                    outdoors in my backyard in Clyde, North Carolina and hiked the Great Smoky Mountains in search of animals and plants that I haven't seen before.
-                </p>
-                <p class="col-12 col-sm-12 col-md-10 mt-5 mb-5">
-                    In 2018, I discovered event photography through volunteering for our town's local international festival, Folkmoot USA. This fesival
-                    promoted cultural diversity in our hometown as well as in the world. It was also where my parents met! I loved photographing the various
-                    folk dances from around the world, with my favorite folk groups being from Romania, Egypt, and Mexico. 
-                </p>
-                <p class="col-12 col-sm-12 col-md-10 mt-5 mb-5">
-                    In the fall of 2018, when I moved to college at the University of North Carolina at Chapel Hill, I shared my interest with my new friends.
-                    They convinced me to turn my passion into a business, and so I did. I started a website, worked for a local nightclub, and created my first online store
-                    where I sold nature photography. 
-                </p>
-                <p class="col-12 col-sm-12 col-md-10 mt-5 mb-5">
-                    It wasn't until the spring of 2019 when I began to take senior portraits for college graduates that I realized how much I loved 
-                    portrait photography. I began to invest so much of my time to improving my portrait photography that I began to lose sight of why I began photography in the first place, to explore
-                    the world. So, I made it my goal to capture the diversity of the world through my camera, looking at people and their talents from a new angle.
-                </p>
-                <p class="col-12 col-sm-12 col-md-10 mt-5 mb-5">
-                    That fall I took my first ever photography class, which changed the way I did photography forever. I learned how to use the equipment, how to think
-                    more creatively, and how to communicate with clients. I never thought that I would end up using camera gels, light rods (they look like lightsabers), and long shutter speeds to capture what
-                    looks like rays of light protruding out of the subject. I was so happy that I had a new spark for photography, and I haven't lost it since.
-                </p>
-                <p class="col-12 col-sm-12 col-md-10 mt-5 mb-5">
-                    My goal now is to create professional portraits but also to add a creative twist or angle that is different than other photographers. I am primarily
-                    interested in capturing the emotions that people feel when they are doing something that they love to do, whether it be playing a sport, making music, or 
-                    cooking (I did a photoshoot for Cold Stone, Mellow Mushroom, and a local restaurant in Chapel Hill).
-                </p>
-                <p class="col-12 col-sm-12 col-md-10 mt-5 mb-5">
-                    Thank you for listening to my story! Feel free to take a look around at my portfolio and the rest of the website. If you have any questions, you know who to ask!
-                </p>
-            </article>
-        </section>
-        <section class="row test_row">
-            <article class="col-12 col-sm-11 pb-5 pt-5 text-center">
-                <p class="testimonial col-12 col-sm-12">“Working with Stephen is a learning experience as well as a photoshoot! His creativity flourishes from his work, but is also able to be seen first hand. Stephen understands the equipment that he is using inside and out. He also is willing to experiment with new technologies and techniques. Stephen is very patient as well, this makes working with him very easy. His photography continues to beat my expectations since the first day I saw one of his pictures.”</p>
-                <p class="client col-12 col-sm-12">- Emma C.</p>
-            </article>
-            <article class="col-12 col-sm-11 pb-5 pt-5 text-center">
-                <p class="testimonial col-12 col-sm-12">“Stephen was a great photographer to work with! Really fast to respond and fast to deliver results! You will not regret it!”</p>
-                <p class="client col-12 col-sm-12">- Sam O.</p>
-            </article>
-            <article class="col-12 col-sm-11 pb-5 pt-5 text-center">
-                <p class="testimonial col-12 col-sm-12">“I have done multiple shoots with Stephen, and his creativity is always the most memorable part! Never did I think I would be posing for long-exposure photos with sparklers, but it is something I would 100% do again because of how fun it was! Stephen’s personality makes everyone involved feel comfortable and the atmosphere is so easy-going, even if you don’t have much experience behind the other side of the lens. I love taking pictures with Stephen and they turn out amazing every time!”</p>
-                <p class="client col-12 col-sm-12">- Taylor W.</p>
-            </article>
-            <article class="col-12 col-sm-11 pb-5 pt-5 text-center">
-                <p class="testimonial col-12 col-sm-12">“Stephen was very relaxed the whole time and was willing to change the plan based on what I was looking for.  We were able to try a lot of locations and poses, and we never had any real conflict over what we were able to do.  When I decided to get a few more photos, we were able to schedule a super convenient mini-shoot to take a few more pictures.  We had a few scheduling conflicts, but Stephen was very flexible the whole time and was able to work with my changing schedule.  Our shoots were a great experience, and the pictures came out better than I expected.  I would definitely recommend him to anyone looking for a professional photographer.”</p>
-                <p class="client col-12 col-sm-12">- Dylan V.</p>
-            </article>
-            <article class="col-12 col-sm-11 pb-5 pt-5 text-center">
-                <p class="testimonial col-12 col-sm-12">“Stephen was amazing to work with. I honestly had so much fun in the photo shoot and it showed in the wonderful pictures he took. He listened to what I wanted and executed it perfectly, while also giving tips and direction. He is very knowledgeable and knew what would look good on screen. Throughout the shoot he showed me the shots he took so I could see what else I wanted or if I wanted more of a certain angle that I really liked. Great experience, and stunning/Insta-worthy pictures. Would recommend Stephen to anyone.”</p>
-                <p class="client col-12 col-sm-12">- Emma T.</p>
-            </article>
-            <article class="col-12 col-sm-11 pb-5 pt-5 text-center">
-                <p class="testimonial col-12 col-sm-12">“When people say Stephen is amazing, it’s an understatement. He will work with you on whatever look you’re going for and end up with a product incredibly better than what you imagined. He is one of the most creatively talented, patient, easy-to-get-along with photographers that I’ve ever worked with. His love for nature pours out through his shooting process and left me feeling inspired. He made me feel super comfortable in front of the camera, and can’t wait to shoot more pictures with him in the future!”</p>
-                <p class="client col-12 col-sm-12">- Lucie P.</p>
-            </article>
-            <article class="col-12 col-sm-11 pb-5 pt-5 text-center">
-                <p class="testimonial col-12 col-sm-12">"Stephen is a true photographer at heart. He has an eye for good shots and knows how to edit. I was incredibly impressed by his artistry as a photographer and his knowledge of how to create great shots. I will be recommending everyone to him because of how diligent he is and how much he pours into his work. The process was completely smooth. As a business owner, I was so impressed by how well he had created the customer journey. I was never surprised or worried. I had a great time working with him to create these photos."</p>
-                <p class="client col-12 col-sm-12">- Tyrell C.</p>
-            </article>
-            <article class="col-12 col-sm-11 pb-5 pt-5 text-center">
-                <p class="testimonial col-12 col-sm-12">“Stephen was a really fantastic photographer to work with! He really valued making the experience collaborative but his own creativity was revealed with some of the unique and inspired takes he had on a classic subject. I would definitely recommend Stephen to anyone looking for not only a skilled and professional photographer but anyone looking for a unique and quality angle.”</p>
-                <p class="client col-12 col-sm-12">- Alex B.</p>
-            </article>
-        </section>
 
-        
+            <h4 class="col-12 col-sm-12 mt-2 mb-2">Event Photography Sparks my Interest</h4>
+            <p class="col-12 col-sm-12 mt-5 mb-5">
+                What does all the nature have to do with portrait photography? It helped me to get out of my comfort zone, inspiring me to become more creative, and eventually
+                to try doing photography for people. Besides, it's a whole lot easier taking pictures of people than it is of, let's say, a small bird soaring through the sky 40 feet away.
+            </p>
+            <p class="col-12 col-sm-12 mt-5 mb-5">
+                So, I started volunteering for the 
+                <a class="link" href="https://www.folkmoot.org/" target="blank">Folkmoot International Dance Festival</a>
+                 back in 2018, and I've continued doing photography for them every year since. This helped me
+                to become more creative with photography and to learn how to interact with clients. The festival is super awesome, with over 10 countries each year performing their 
+                folk dances and folk songs. Also, I will be donating 10% of the profit I make from event sessions to this wonderful organization. Here's their website if you would like
+                to check them out.
+            </p>
+            <article class="img_container col-12 col-sm-10 col-md-5 mt-4 mb-4">
+                <img src="https://drscdn.500px.org/photo/1039207022/m%3D900/v2?sig=693296c3893d4c9c1188c7909b57706ebdf1d7acbdfef1987eedf1d6ecf11641" onMouseDown="popupMsg('Copyright Stephen Wenzel ©2021')">
+            </article> 
+
+            <h4 class="col-12 col-sm-12 mt-2 mb-2">Portrait Photography Takes Off</h4>
+            <p class="col-12 col-sm-12 mt-5 mb-5">
+                The summer after I started photography for Folkmoot, I became interested in capturing the personalities of people other than folk dancers. So, I learned more about
+                how to use more advanced features on my camera, and I began following a lot more inspiring people on social media, such as 
+                <a class="link" href="https://www.instagram.com/aaronandersonvisuals/" target="blank">Aaron Anderson</a>,
+                <a class="link" href="https://www.instagram.com/joemcnallyphoto/" target="blank">Joe McNally</a>, and
+                <a class="link" href="https://www.instagram.com/marinawphoto/" target="blank">Marina Williams</a>.
+                My creativity was running wild, and I seized every opportunity to take portraits for people.
+            </p>
+            <p class="col-12 col-sm-12 mt-5 mb-5">
+                I was going into my sophomore year at UNC Chapel Hill, and I signed up for a class through the award-winning 
+                <a class="link" href="https://www.instagram.com/aaronandersonvisuals/" target="blank">Hussman School of Journalism and Media</a>
+                called "MEJO 489 - Photojournalism, Lighting, and Business Techniques". This class helped me to expand my personal photographic vision and my professional portfolio
+                by honing my newfound knowledge and skills of studio and location lighting, propping, and styling. Overall, I grew to become a whole lot more comfortable with
+                portrait photography, and I gained the skills that I wanted to be as creative as possible. 
+            </p>
+            <article class="img_container col-12 col-sm-6 col-md-3 mt-4 mb-4">
+                <img src="https://drscdn.500px.org/photo/1039045179/m%3D900/v2?sig=3d54cd11f4676fa3ad2df3c2e8d68faf02e8454150a8d5ccee150775b9683296" onMouseDown="popupMsg('Copyright Stephen Wenzel ©2021')">
+            </article> 
+
+            <h4 class="col-12 col-sm-12 mt-2 mb-2">Starting the Business</h4>
+            <p class="col-12 col-sm-12 mt-5 mb-5">
+                It's been more than 2 years since then, and I've been having a great time taking portraits. In every session, I aim to make it as fun as possible, while honing in on 
+                capturing your personality as well as your experiences in the most creative ways possible. I've even learned how to code websites!
+            </p>
+
+            <h4 class="col-12 col-sm-12 mt-2 mb-2">My Creative Style</h4>
+            <p class="col-12 col-sm-12 mt-5 mb-5">
+                I love using colors to capture a certain mood in each image I take, whether that be the natural glow of the sun on your figure during golden hour, using
+                a multitude of photography gels to portray a color combination, or using "lightsabers" to create vibrant images that fill up your environment.
+            </p>
+            <p class="col-12 col-sm-12 mt-5 mb-5">
+                If you would like to read some testimonials from past clients about my services, please click
+                <a class="link" href="testimonials.html">this link</a>
+                or the button below to navigate to that page! Thank you for reading about my journey and who I am. I look forward to hearing from you!
+            </p>
+        </section>
     </main>
 
-    <footer class="container-fluid footer pt-3">
-        <section class="row footer-content">
-            <article class="col-11 col-sm-11 footer-info">
-                <p class="name col-12 col-sm-12">
-                    <span>s</span>tephen<span>w</span>enzel<span>p</span>hotography
-                </p>
-                <p>Raleigh, Durham, Chapel Hill, & Asheville, NC</p>
-                <p>Coded by Stephen Wenzel (HTML5, CSS3) ©2021</p>
-            </article>           
-            <article class="col-10 col-sm-10 pb-3 footer-button">
-                <a href="sessions.html" role="button" class="btn btn-info col-8 col-sm-6" target="_blank">Schedule a Session</a>
-            </article>       
-            <article class="footer-social_media col-12 col-sm-12">
+    
+    
+    <footer class="row footer pb-3">
+        <section class="col-12 col-sm-12 footer-content">
+            <article class="col-12 col-sm-12 col-md-12 footer-info">
+                <p class="col-12 col-sm-12">Raleigh, Durham, Chapel Hill, & Asheville, NC</p>
+                <p class="col-12 col-sm-12">Coded by Stephen Wenzel (HTML5, CSS3) ©2022</p>
+            </article>
+            <article class="footer-social_media col-12 col-sm-12 col-md-12">
                 <a href="https://500px.com/p/stephenwenzelphotography?view=photos" target="_blank"><i id="500px" class="fab fa-500px"></i></a>
                 <a href="https://www.instagram.com/stephenwenzelphotography/" target="_blank"><i id="Instagram" class="fab fa-instagram"></i></a>
                 <a href="https://www.facebook.com/stephenwenzelphotography/" target="_blank"><i id="Facebook" class="fab fa-facebook-square"></i></a>
@@ -200,17 +163,10 @@
         </section>
     </footer>
 
-    <!-- NECESSARY <script> LINKS. The three <script> links below add jQuery, popper.js, and Bootstrap 4 JavaScript. These are libraries of scripts that are necessary to make Bootstrap's interactive and animated components work (e.g., dropdown menus, buttons, alerts, carousels, collapsing navbars and content areas, modals, popups, tooltips, etc). These three <script> links MUST appear in THIS ORDER; this is because both popper.js and the Bootstrap scripts rely on jQuery to work, so jQuery must load into your page first. We add these links at the bottom of the <body> element instead of in the <head> element so the scripts won't be loaded into your site until they're needed, which helps with your site's speed and functionality. -->
-
-    <!-- jQuery--this must come first! -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
-    <!-- popper.js--a library of drop-down and pop-up JavaScript scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-
-    <!-- unique Bootstrap 4 JavaScript scripts -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
-
 </html>

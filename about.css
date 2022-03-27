@@ -1,327 +1,513 @@
-@media only screen and (max-width: 576px){
-    .site-title {
-        font-size: 0.9em;
-    }
+/*WORKFLOW ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+    1. BIG IDEA CONCEPT
+    2. AUDIENCE TO TARGET
+    3. RESEARCH
+    4. UI DESIGN IDEAS
+        > COLOR PALETTE & TYPOGRAPHY
+            > COLOR BLINDNESS
+        > MOBILE-FIRST DESIGN
+    5. DESIGN PROCESS
+        A. GENERAL SETTINGS
+            a. MOBILE -> ENORMOUS
+        B. HEADER
+            a. MOBILE -> ENORMOUS
+        C. FOOTER
+            a. MOBILE -> ENORMOUS
+        D. MAIN
+            a. MOBILE -> ENORMOUS
+    6. SHOW PEOPLE. TAKE NOTES.
+    7. IMPLEMENT WHAT YOU LEARNED
+    8. ADD NEW IDEAS
+?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????*/
 
-    p {
-        font-size: 1.2em;
-    }
 
-    .test_image-container {
-        height: 70vh !important;
-    }
 
-    .tt_sub-cont {
-        height: 90%;
-    }
 
-    .test_image-vertical {
-        width: auto;
-        max-height: 100%;
-    }
-}
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ GENERAL SETTINGS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
-/*Smaller than medium screens*/
-@media only screen and (max-width: 768px){
-    .social_media-row {
-        display: none;
-    }
-
-    .site-title {
-        text-align: center;
-    }
-
-    .navbar {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        justify-items: center;
-        align-content: center;
-    }
-
-    .navbar-nav {
-        padding: 0;
-    }
-
-    .navbar-collapse {
-        border: #2A3027 0.5vh solid;
-    }
-
-    .nav-item {
-        display: flex;
-        margin: 0;
-      }
-
-      .nav-item a {
-        text-align: center;
-        width: 100%;
-      }
-
-      .navbar-toggler{
-        background-color: #2A3027;
-        margin-bottom: 2vh;
-        width: 40vw;
-      }
-
-      #second_section {
-          height: 60vh !important;
-      }
-
-      #third_section {
-        height: 60vh !important;
-      }
-
-      #third_section .box a {
-          background-color: hsla(255, 100%, 100%, 1) !important;
-          color: #2A3027;
-      }
-}
-
-/*larger than large screens*/
-@media only screen and (min-width: 992px){
-    p {
-        font-size: 1.1em;
-    }
-
-    a {
-        font-size: 1.1em;
-    }
-}
-
-@media only screen and (min-width: 1200px){
-    p {
-        font-size: 1.2em;
-    }     
-
-    a {
-        font-size: 1.2em;
-    }
-}
-
-@media only screen and (min-width: 768px){
-    .nav-item:hover a {
-        color:#E8B130;
-    }
-}
-
-@media only screen and (max-width: 992px){
-    .test_image-vertical {
-        height: auto;
-        max-width: 100%;
-    }
-}
-
-html {
-    height: 100%;
-}
-
-html::-webkit-scrollbar {
-    width: 15px;
-    background: black;
-}
-
-html::-webkit-scrollbar-button {
-    display: none;
-}
-
-html::-webkit-scrollbar-thumb {
-    background:#E8B130;
-    border-radius: 5px;
-}
-
-html::-webkit-scrollbar-track {
-    background: #2A3027;
-}
-
-* {
-    box-sizing: border-box;
-    font-family: 'Abel', sans-serif;
-}
-
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 body {
-    background-color: white;
-    -webkit-user-select: none; /* Webkit */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE 10 */
-    /* Currently not supported in Opera but will be soon */
-    -o-user-select: none;
-    user-select: none;
-    height: 100%;
+    position: relative;
+    font-family: 'Cairo', sans-serif;
+    background-color: black;
 }
 
 .btn {
-    background-color: #2A3027;
-    color: #D0DACC;
+    height: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    border-radius: 15px;
+    border: none;
+    font-size: 1.1em;
+}
+
+.btn:link, .btn:visited, .btn:hover, .btn:active {
+    background-color: white;
+    color: black;
     border: none;
 }
-
-.btn:hover {
-    background-color: #2A3027;
-    color: #E8B130;
-    cursor: pointer;
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+    body * {
+        font-size: 1.05rem;
+    }    
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+    body * {
+        font-size: 1.10rem;
+    }            
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    body * {
+        font-size: 1.15rem;
+    }        
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+    body * {
+        font-size: 1.20rem;
+    }        
+}
+/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
+@media screen and (min-width: 1400px) {
+    body * {
+        font-size: 1.25rem;
+    }    
 }
 
-/*----------------------------Header--------------------------------------------------------------------------------*/
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
     
-.site-header {
-    text-transform: lowercase;
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+
+}
+/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
+@media screen and (min-width: 1400px) {
+
 }
 
-.name {
-    text-transform: lowercase;
-    color: #8f918e;
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ HEADER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*====================================================== MAIN CONTENT ===================================================================*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+header {
+    background-color: black;
+    color: white;
+    z-index: 8;
+    position: relative;
 }
-  
-    .name span {
-        color: #E8B130;
+
+header .btn {
+    margin-top: 1em;
+    margin-left: 2em;
+    font-size: 1em;
+    background-color: white;
+    color: black !important;
+}
+
+.sig-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    height: 3em;
+}
+
+    .sig {
+        max-height: 2em;
     }
 
-.site-title {
-    font-size: 1.9rem;
-    padding-top: 1vh;
+    .sig-box p {
+        font-size: 0.7em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+
+header .btn:link, header .btn:visited, header .btn:active {
+    background-color: white;
+    color: black;
+}
+
+header .btn:hover {
+    background-color: #E8B130 !important;
+}
+
+.sig-box {
+    height: 4em;
+}
+
+    .sig {
+        max-height: 3em;
+    }
+
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+    
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 0;
+    }    
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+    
+}
+/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
+@media screen and (min-width: 1400px) {
+    
+}
+/*====================================================== NAVIGATION PANE ================================================================*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+#menu-button-container {
+    display: none;  
+}
+
+.navbar {
+    position: relative;
+    padding: 0;
+    z-index: 9;
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: center;
+    align-items: center;
+}
+
+.active a {
+    color: #E8B130 !important;
 }
 
 .navbar-collapse {
-    margin-left: 0;
-    background-color: #2A3027;
-    border-radius: 0 0 30px 30px;
+    padding: 0;
 }
 
-.active a { 
-    color: #D0DACC;
-}
-
-/*I determined how to customize the navbar toggler using the following two websites:
-    https://www.geeksforgeeks.org/how-to-change-hamburger-toggler-color-in-bootstrap/
-    and
-    https://github.com/yui/yuicompressor/issues/274
-*/
-          
-.custom-toggler .navbar-toggler {
-    border-color: #2A3027;
-}
-
-.custom-toggler .navbar-toggler-icon {
-    background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(208, 218, 204, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-    .nav-item {
-      text-align: center;
-    }
-
-        .nav-item a {
-            color: #D0DACC;
-        }
-
-        .nav-item a:hover {
-            color: #E8B130;
-        }
-
-    .nav-link {
-      font-size: 1.2rem;
-      color: #D0DACC;
-      border-top: solid #2A3027 1px;
-    }
-
-    .nav-link:hover {
-        border-top: solid #E8B130 1px;
-    }
-
-/*Social Media - Aside*/
-#social_media {
-    position:fixed;
+.navbar-nav {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-content: center;
-    padding: 0.25vh;
-    background-color: #2A3027;
-    top: 3vh;
-    left: 87vw;
-    border-radius: 1.5vh;
-    z-index: 30;
-  }
-
-  #social_media i {
-    padding: 0.75vh;
+    flex-flow: row wrap;
+    justify-content: center;
     text-align: center;
-    font-size: 1.2rem;
-    color: #D0DACC;
-  }
-  
-  #social_media i:hover{
-    cursor:pointer;
-    color: #E8B130;
-  }
+    padding: 0;
+}
 
-/*--------------------------Main----------------------------------------------------------------------------------------------*/
-/*Page Header*/
+.nav-item {
+    margin: 0;
+    padding: 0;
+}
 
-.page-title {
-    color: #D0DACC;
-    background-color: #2A3027;
-} 
+.nav-item a:link, .nav-item a:visited, .nav-item a:hover, .nav-item a:active{
+    color: white;
+    font-size: 1.1em;
+}
 
-.subtitle span {
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+
+.navbar-collapse {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    margin-top: 1em;
+}
+
+    .navbar-collapse a {
+        margin-left: 0;
+    }
+
+.navbar-nav {
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.nav-item {
+    text-align: center;
+}
+
+.nav-item a:hover {
+    color: #E8B130 !important;
+}
+
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+    
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+
+.navbar {
+position: relative;
+padding: 0;
+z-index: 0;
+display: inline-flex;
+justify-items: center;
+align-items: center;
+}
+
+    #menu {
+        display: none;
+    }
+
+.navbar-collapse {
+    display: flex;
+    flex-flow: column wrap;
+    background: none;
+    background-color: hsla(0,0%,0%,0.4);
+}
+
+    .navbar-collapse .btn {
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+
+    .navbar-nav {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+        .nav-item a:link, .nav-item a:visited, .nav-item a:hover, .nav-item a:active{
+            color: white;
+            font-size: 1.1em;
+        }
+
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+
+}
+/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
+@media screen and (min-width: 1400px) {
+
+}
+/*====================================================== SOCIAL MEDIA AND CONTACT =======================================================*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+    
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+
+}
+/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
+@media screen and (min-width: 1400px) {
+
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ MAIN \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+main {
+    background-color: white;
+    font-family: 'Asar', serif;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;    
+    color: black;
+}
+
+    main p {
+        font-size: 1.05em;
+    }
+
+    main h3 {
+        font-size: 1.3em;
+    }
+
+    main h4 {
+        font-size: 1.3em;
+    }
+
+.link {
+    font-weight: bold;
+}
+
+.link:link {
     color: #E8B130;
 }
 
-.bg-image {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode:screen;
+.link:visited {
+color: #E8B130;
 }
 
-/*Sections*/
-.intro p {
-    line-height: 1.5rem;
+.link:hover {
+    color: #E8B130;
+    text-decoration: none;
+}
+
+.link:active {
+    color: #E8B130; 
+}
+
+.img_container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: center;
+}
+
+.img_container #profile {
+    width: 100%;
+    border-radius: 50%;
 }
 
 .img_container img {
     width: 100%;
-    margin-left: 15px;
-    border-radius: 50%;
+    border-radius: 1%;
 }
 
-.test_row {
-    border-top:dotted #E8B130 3px;
+.intro {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
 
-.testimonial {
-    line-height: 1.5rem;
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+
+.img_container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.client {
-    font-style: oblique;
+main p {
+    font-size: 1.05em;
 }
 
-/*----------------------------Footer--------------------------------------------------------------------------------*/
-
-footer .btn {
-    background-color: #2A3027;
-    color: #D0DACC;
+main h3 {
+    font-size: 1.3em;
 }
 
-footer .btn:hover {
-    background-color: #2A3027;
-    color: #E8B130;
-    cursor: pointer;
+main h4 {
+    font-size: 1.3em;
 }
+
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+    
+    main p {
+        font-size: 1.10em;
+    }
+
+    main h3 {
+        font-size: 1.35em;
+    }
+
+    main h4 {
+        font-size: 1.5em;
+    }
+    
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    
+    main p {
+        font-size: 1.05em;
+    }
+
+    main h3 {
+        font-size: 1.3em;
+    }
+
+    main h4 {
+        font-size: 1.3em;
+    }
+
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+    
+    main p {
+        font-size: 1.05em;
+    }
+
+    main h3 {
+        font-size: 1.3em;
+    }
+
+    main h4 {
+        font-size: 1.3em;
+    }
+
+}
+/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
+@media screen and (min-width: 1400px) {
+    
+    main p {
+        font-size: 1.05em;
+    }
+
+    main h3 {
+        font-size: 1.3em;
+    }
+
+    main h4 {
+        font-size: 1.3em;
+    }
+
+}
+
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ FOOTER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 
 .footer {
-    border-top: 1px #53614D solid;
-    font-size: 0.8rem;
+    font-size: 1em;
+    color: white;
+    margin-top: 1em;
 }
 
 .footer-content {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
 }
 
 .footer-info {
@@ -338,7 +524,6 @@ footer .btn:hover {
 /*Social Media - Footer*/
 .footer-social_media {
     position:relative;
-    background-color: #2A3027;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -351,11 +536,91 @@ footer .btn:hover {
     padding-right: 1.5vw;
     padding-left: 1.5vw;
     text-align: center;
-    font-size: 1.5rem;
-    color: #D0DACC;
+    font-size: 1.8em;
+    color: white;
+  }
+  
+  .footer-social_media i:link, .footer-social_media i:visited, .footer-social_media i:active{
+    cursor:pointer;
+    color: white;
   }
   
   .footer-social_media i:hover{
     cursor:pointer;
     color: #E8B130;
   }
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+    
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+    
+}
+/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
+@media screen and (min-width: 1400px) {
+
+}
+
+
+
+
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ OTHER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+html {
+    height: 100%;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+    background: black;
+}
+
+html::-webkit-scrollbar-button {
+    display: none;
+}
+
+html::-webkit-scrollbar-thumb {
+    background:#E8B130;
+    border-radius: 5px;
+}
+
+html::-webkit-scrollbar-track {
+    background: black;
+}
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+    
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+
+}
+/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
+@media screen and (min-width: 1400px) {
+
+}
+/*---------------------- PRINTING -------------------------------*/
+@media print {
+
+}
