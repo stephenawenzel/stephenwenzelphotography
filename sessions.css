@@ -391,30 +391,19 @@ main .btn:link, main .btn:visited, main .btn:hover, main .btn:active {
 }
 
 .img_container1 {
-    z-index: 3;
-    background: url("https://drscdn.500px.org/photo/1045635699/m%3D900/v2?sig=1753cfcf81546c1aa9def1ad091dd00b503dd1747b7862ae62162dabe3ee7f7b") no-repeat fixed center;
-    background-size: auto 100%;
-    height: 100vh;
+    visibility: hidden;
 }
 
 .img_container2 {
-    z-index: 3;
-    background: url("https://drscdn.500px.org/photo/1039045188/m%3D900/v2?sig=0e8a74242db59a6537a465791033e6fd6f0e74e6ba72698121bb4f216fdc9096") no-repeat fixed center;
-    background-size: auto 100%;
-    height: 100vh;
+    visibility: hidden;
 }
 
 .img_container3 {
-    z-index: 3;
-    background: url("https://drscdn.500px.org/photo/1039045179/m%3D900/v2?sig=3d54cd11f4676fa3ad2df3c2e8d68faf02e8454150a8d5ccee150775b9683296") no-repeat fixed center;
-    background-size: auto 100%;
-    height: 100vh;
+    visibility: hidden;
 }
 
 .img_container4 {
-    background: url("https://drscdn.500px.org/photo/1039045219/m%3D900/v2?sig=182b563035d5ea5f19811e5d97045051316ab01326d80706b3741a6b95258d97") no-repeat fixed center;
-    background-size: auto 100%;
-    height: 100vh;
+    visibility: hidden;
 }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
@@ -423,6 +412,41 @@ main .btn:link, main .btn:visited, main .btn:hover, main .btn:active {
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
+
+    .img_container-background_color img {
+        display: none;
+    }
+    
+    .img_container1 {
+        visibility: visible;
+        z-index: 3;
+        background: url("https://drscdn.500px.org/photo/1045635699/m%3D900/v2?sig=1753cfcf81546c1aa9def1ad091dd00b503dd1747b7862ae62162dabe3ee7f7b") no-repeat fixed center;
+        background-size: auto 100%;
+        height: 100vh;
+    }
+    
+    .img_container2 {
+        visibility: visible;
+        z-index: 3;
+        background: url("https://drscdn.500px.org/photo/1039045188/m%3D900/v2?sig=0e8a74242db59a6537a465791033e6fd6f0e74e6ba72698121bb4f216fdc9096") no-repeat fixed center;
+        background-size: auto 100%;
+        height: 100vh;
+    }
+    
+    .img_container3 {
+        visibility: visible;
+        z-index: 3;
+        background: url("https://drscdn.500px.org/photo/1039045179/m%3D900/v2?sig=3d54cd11f4676fa3ad2df3c2e8d68faf02e8454150a8d5ccee150775b9683296") no-repeat fixed center;
+        background-size: auto 100%;
+        height: 100vh;
+    }
+    
+    .img_container4 {
+        visibility: visible;
+        background: url("https://drscdn.500px.org/photo/1039045219/m%3D900/v2?sig=182b563035d5ea5f19811e5d97045051316ab01326d80706b3741a6b95258d97") no-repeat fixed center;
+        background-size: auto 100%;
+        height: 100vh;
+    }
         
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
