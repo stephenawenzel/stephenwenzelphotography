@@ -186,6 +186,7 @@ header {
     flex-flow: row wrap;
     justify-content: center;
     text-align: center;
+    padding: 0;
 }
 
     .nav-item a:link, .nav-item a:visited, .nav-item a:hover, .nav-item a:active{
