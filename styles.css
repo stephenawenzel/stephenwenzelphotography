@@ -56,35 +56,37 @@ body {
 
 
 #slideshow {
-    animation-name: slideshow;
-    animation-duration: 40s;
+    animation-name: open;
+    animation-duration: 50s;
     animation-iteration-count: infinite;
     /*
-        cubic-bezier(start of curve, halfway speed, end of curve, 
+        cubic-bezier([time on first], [transition to second], [time on second], [transition from halfway]) 
     */
-    animation-timing-function:cubic-bezier(0.5,0,0.5,1);
+    animation-timing-function:cubic-bezier(0.7,0,0.3,1);
     animation-delay: 0;
-    background: url("https://drscdn.500px.org/photo/1038667203/m%3D900/v2?sig=d8526e4c77606dad9588431d39fcefec9046633011205cf6573433016ad795e5") no-repeat local center;
     background-blend-mode: multiply;
     position: absolute;
-    opacity: 0.3;
+    opacity: 0.9;
     top: 0;
     height: 100%;
-    width: 100%;
-    background-size: 120% auto !important;
+    width: 75%;
+    background-size: 90% auto !important;
 }
 
-@keyframes slideshow {
-    alex joe lucie dylan rachel wedding tyrell kelly
+/*
+    alex sam lucie dylan rachel wedding tyrell kelly mcrae
+*/
+
+@keyframes open {
     0% {background: url("https://drscdn.500px.org/photo/1038667203/m%3D900/v2?sig=d8526e4c77606dad9588431d39fcefec9046633011205cf6573433016ad795e5") no-repeat local center;}
-    12.5% {background: url("https://drscdn.500px.org/photo/1039045188/m%3D900/v2?sig=0e8a74242db59a6537a465791033e6fd6f0e74e6ba72698121bb4f216fdc9096") no-repeat local center;}
-    25% {background: url("https://drscdn.500px.org/photo/1038667204/m%3D900/v2?sig=7e034e0ff0f557502474029afcaa4ae58736d94d33c93a97e127b441333c122b") no-repeat local center;}
+    12.5% {background: url("https://drscdn.500px.org/photo/1045635699/m%3D900/v2?sig=1753cfcf81546c1aa9def1ad091dd00b503dd1747b7862ae62162dabe3ee7f7b") no-repeat local center;}
+    25% {background: url("https://drscdn.500px.org/photo/1038667205/m%3D900/v2?sig=78d850bbc44ba127ea5fab7d7158bbe8ef90c421042930a43316602d0a4637ed") no-repeat local center;}
     37.5% {background: url("https://drscdn.500px.org/photo/1039045208/m%3D900/v2?sig=42caf12e46e177569ad25afb84a84825316b9129bfcca16b422da280e1928807") no-repeat local center;}
-    50% {background: url("https://drscdn.500px.org/photo/1038667205/m%3D900/v2?sig=78d850bbc44ba127ea5fab7d7158bbe8ef90c421042930a43316602d0a4637ed") no-repeat local center;}
-    62.5% {background: url("https://drscdn.500px.org/photo/1039045219/m%3D900/v2?sig=182b563035d5ea5f19811e5d97045051316ab01326d80706b3741a6b95258d97") no-repeat local center;}
-    75% {background: url("https://drscdn.500px.org/photo/1038667202/m%3D900/v2?sig=a923b7b8b9558aef839e1a7ff8f356fb5d67fc169d4146ca01b72623206702c1") no-repeat local center;}
-    87.5% {background: url("https://drscdn.500px.org/photo/1039045179/m%3D900/v2?sig=3d54cd11f4676fa3ad2df3c2e8d68faf02e8454150a8d5ccee150775b9683296") no-repeat local center;}
-    100% {background: url("https://drscdn.500px.org/photo/1045635699/m%3D900/v2?sig=1753cfcf81546c1aa9def1ad091dd00b503dd1747b7862ae62162dabe3ee7f7b") no-repeat local center;}
+    50% {background: url("https://drscdn.500px.org/photo/1038667204/m%3D900/v2?sig=7e034e0ff0f557502474029afcaa4ae58736d94d33c93a97e127b441333c122b") no-repeat local center;}
+    62.5% {background: url("https://drscdn.500px.org/photo/1038667202/m%3D900/v2?sig=a923b7b8b9558aef839e1a7ff8f356fb5d67fc169d4146ca01b72623206702c1") no-repeat local center;}
+    75% {background: url("https://drscdn.500px.org/photo/1039045179/m%3D900/v2?sig=3d54cd11f4676fa3ad2df3c2e8d68faf02e8454150a8d5ccee150775b9683296") no-repeat local center;}
+    87.5% {background: url("https://drscdn.500px.org/photo/1046885025/m%3D900/v2?sig=154996f3614aecd3ff71fdde779aa118d64e74fe570ece63ca11115e0c869c1c") no-repeat local center;}
+    100% {background: url("https://drscdn.500px.org/photo/1039045219/m%3D900/v2?sig=182b563035d5ea5f19811e5d97045051316ab01326d80706b3741a6b95258d97") no-repeat local center;}
 }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
@@ -98,10 +100,6 @@ body {
     .btn:hover {
         background-color: black;
         color: #E8B130;
-    }
-
-    #slideshow {
-        width: 75%;
     }
 
 }
@@ -121,6 +119,7 @@ body {
 
     #slideshow {
         width: 50%;
+        opacity: 1;
     }
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
@@ -144,46 +143,44 @@ body {
 /*====================================================== MAIN CONTENT ===================================================================*/
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
 header {
     color: white;
+    width: 90%;
     z-index: 8;
-    position: relative;
-    margin-top: 3em;
+    color: white;
+    position: fixed;
     overflow-y: hidden;
+    margin-top: 5vh;
+    top: 0;
+    border-left: solid white 0.1vw;
+    font-size: 0.9em;
 }
-
-    header .btn {
-        margin-top: 1em;
-        margin-left: 2em;
-        font-size: 1em;
-        background-color: white;
-        color: black !important;
-    }
 
     .sig-box {
         display: flex;
         flex-flow: row wrap;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        font-size: 1.5em;
-        height: 3em;
+        height: 4.5em;
         margin-bottom: 3em;
     }
 
         .sig {
-            max-height: 2em;
+            max-height: 3em;
         }
 
         .sig-box p {
-            font-size: 0.7em;
             font-weight: bold;
-            text-align: center;
+            padding: 0;
+            text-align: left;
+            font-size: 0.8em !important;
         }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
     header {
-        background-color: initial;
+        border-left: solid white 0.1vw;
     }
 
     header .btn:link, header .btn:visited, header .btn:active {
@@ -194,11 +191,19 @@ header {
     header .btn:hover {
         background-color: #E8B130 !important;
     }
+
+    .sig-box {
+        justify-content: center;
+    }
+
+    .sig-box p {
+        text-align: center;
+    }
     
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
-        
+
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
@@ -211,6 +216,19 @@ header {
 /*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
 @media screen and (min-width: 1400px) {
 
+    .sig-box {
+        height: 7em;
+        margin-bottom: 3em;
+    }
+
+        .sig {
+            max-height: 5em;
+        }
+
+        .sig-box p {
+            font-size: 1.2em !important;
+        }
+
 }
 /*====================================================== NAVIGATION PANE ================================================================*/
 
@@ -221,7 +239,7 @@ header {
 }
 
 .navbar {
-    position: relative;
+    left: 0;
     padding: 0;
     z-index: 9;
     display: flex;
@@ -241,72 +259,29 @@ header {
 .navbar-nav {
     display: flex;
     flex-flow: row wrap;
-    justify-items: center;
+    justify-content: center;
     padding: 0;
     text-align: center;
 }
 
     .nav-item a:link, .nav-item a:visited, .nav-item a:hover, .nav-item a:active{
         color: white;
-        font-size: 1.1em;
+        text-align: left;
+        padding: 1.1vh 0 0 0;
     }
 
 /*
-
-    #menu-button-container {
-        padding: 0;
-    }
-
-        #menu {
-            display: flex;
-            font-size: 1.5em;
-            height: 3em;
-            justify-content: center;
-            align-items: center;
-        }
-
-    */
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
     
-    .navbar {
-        position: relative;
-        padding: 0;
-        z-index: 9;
-        display: flex;
-        flex-flow: row wrap;
-        justify-items: center;
-        align-items: center;
-    }
-    
-    .active a {
-        color: #E8B130 !important;
-    }
-    
-    .navbar-collapse {
-        padding: 0;
-    }
-    
-    .navbar-nav {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        padding: 0;
-        text-align: center;
-    }
-    
-        .nav-item a:link, .nav-item a:visited, .nav-item a:hover, .nav-item a:active{
-            color: white;
-            font-size: 1.1em;
-        }
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
         
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
-@media screen and (min-width: 992px) {
-        
+@media screen and (min-width: 992px) { 
+
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
@@ -375,20 +350,30 @@ header {
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 
 .footer {
-    font-size: 0.8em;
+    width: 90%;
     color: white;
-    margin-top: 3em;
+    position: fixed;
+    right: 8vw;
+    bottom: 0;
+    border-right: solid white 0.1vw;
+    font-size: 0.9em;
+    margin-bottom: 5vh;
 }
 
 .footer-content {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .footer-info {
-    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    padding: 0;
 }
 
 .footer-button {
@@ -400,11 +385,13 @@ header {
 
 /*Social Media - Footer*/
 .footer-social_media {
-    position:relative;
+    position: relative;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: flex-end;
+    padding: 0;
     align-content: center;
+    font-size: 1.1em;
   }
 
   .footer-social_media i {
@@ -413,7 +400,6 @@ header {
     padding-right: 1.5vw;
     padding-left: 1.5vw;
     text-align: center;
-    font-size: 1.8em;
     color: white;
   }
   
@@ -429,6 +415,12 @@ header {
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
+
+    footer {
+        bottom: 0;
+        position: absolute;
+        right: 3vw;
+    }
     
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
@@ -438,13 +430,51 @@ header {
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
 
+    .footer-social_media {
+        position:relative;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        padding: 0 1vw 0 1vw;
+        align-content: center;
+      }
+    
+      .footer-social_media i {
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        text-align: center;
+        color: white;
+      }
+      
+      .footer-social_media i:link, .footer-social_media i:visited, .footer-social_media i:active{
+        cursor:pointer;
+        color: white;
+      }
+      
+      .footer-social_media i:hover{
+        cursor:pointer;
+        color: #E8B130;
+      }
+
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
     
 }
-/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
+/*[END] -------- ENORMOUS SCREENS (COL-XXL-) ----------------------*/
 @media screen and (min-width: 1400px) {
+    
+      .footer-social_media i {
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        text-align: center;
+        color: white;
+        font-size: 1.1em;
+      }
 
 }
 
@@ -454,27 +484,27 @@ header {
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ OTHER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
-    html {
-        height: 100%;
-    }
+html {
+    height: 100%;
+}
 
-    html::-webkit-scrollbar {
-        width: 15px;
-        background: black;
-    }
+html::-webkit-scrollbar {
+    width: 10px;
+    background: black;
+}
 
-    html::-webkit-scrollbar-button {
-        display: none;
-    }
+html::-webkit-scrollbar-button {
+    display: none;
+}
 
-    html::-webkit-scrollbar-thumb {
-        background:#E8B130;
-        border-radius: 5px;
-    }
+html::-webkit-scrollbar-thumb {
+    background:#E8B130;
+    border-radius: 5px;
+}
 
-    html::-webkit-scrollbar-track {
-        background: black;
-    }
+html::-webkit-scrollbar-track {
+    background: black;
+}
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {

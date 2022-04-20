@@ -39,7 +39,6 @@ body {
     align-content: center;
     border-radius: 15px;
     border: none;
-    font-size: 1.1em;
 }
 
 .btn:link, .btn:visited, .btn:hover, .btn:active {
@@ -49,33 +48,18 @@ body {
 }
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
-    body * {
-        font-size: 1.05rem;
-    }    
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
-    body * {
-        font-size: 1.10rem;
-    }            
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
-    body * {
-        font-size: 1.15rem;
-    }        
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
-    body * {
-        font-size: 1.20rem;
-    }        
 }
 /*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
 @media screen and (min-width: 1400px) {
-    body * {
-        font-size: 1.25rem;
-    }    
 }
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ HEADER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
@@ -87,12 +71,12 @@ header {
     color: white;
     z-index: 8;
     position: relative;
+    font-size: 0.9em;
 }
 
     header .btn {
         margin-top: 1em;
         margin-left: 2em;
-        font-size: 1em;
         background-color: white;
         color: black !important;
     }
@@ -102,18 +86,18 @@ header {
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
-        font-size: 1.5em;
-        height: 3em;
+        height: 4em;
+        margin-bottom: 0.5em;
     }
 
         .sig {
-            max-height: 2em;
+            max-height: 3em;
         }
 
         .sig-box p {
-            font-size: 0.7em;
             font-weight: bold;
             text-align: center;
+            font-size: 0.8em;
         }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
@@ -127,14 +111,6 @@ header {
     header .btn:hover {
         background-color: #E8B130 !important;
     }
-
-    .sig-box {
-        height: 4em;
-    }
-
-        .sig {
-            max-height: 3em;
-        }
     
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
@@ -142,12 +118,10 @@ header {
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
-    header {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        padding: 0;
-    }    
+    body * {
+        font-size: 1.1rem;
+    }
+
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
@@ -191,24 +165,8 @@ header {
 
     .nav-item a:link, .nav-item a:visited, .nav-item a:hover, .nav-item a:active{
         color: white;
-        font-size: 1.1em;
     }
 
-/*
-
-    #menu-button-container {
-        padding: 0;
-    }
-
-        #menu {
-            display: flex;
-            font-size: 1.5em;
-            height: 3em;
-            justify-content: center;
-            align-items: center;
-        }
-
-    */
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
 
@@ -283,9 +241,16 @@ header {
 
             .nav-item a:link, .nav-item a:visited, .nav-item a:hover, .nav-item a:active{
                 color: white;
-                font-size: 1.1em;
             }
     
+}
+
+@media screen and (min-width: 942px) and (max-width: 1140px) {
+
+    .nav-item a:link, .nav-item a:visited, .nav-item a:hover, .nav-item a:active{
+        color: white;
+    }
+
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
@@ -324,24 +289,37 @@ header {
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 
-main article {
-    margin-top: 2em;
-    margin-bottom: 2em;
+main {
+    font-size: 0.9em;
+    background-color: #E8B130;
 }
 
 main h2 {
-    font-size: 1.3em;
     font-weight: bold;
-}
-
-main p {
-    font-size: 1em;
+    margin-top: 0.7em;
+    font-size: 1.5em;
 }
 
 main h4 {
-    font-size: 1.1em;
     color: #E8B130;
     font-weight: bold;
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+
+.anchor_place {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    font-weight: bold;
+    margin: 0;
+    font-size: 2.2em;
+    color: #E8B130 !important;
+    background-color: black;
+    color: white;
+    height: 4em;
+    text-align: center;
 }
 
 main .btn:link, main .btn:visited, main .btn:hover, main .btn:active {
@@ -352,6 +330,19 @@ main .btn:link, main .btn:visited, main .btn:hover, main .btn:active {
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
+}
+
+main .portfolio_btn:link, main .portfolio_btn:visited, main .portfolio_btn:hover, main .portfolio_btn:active {
+    background-color: #E8B130;
+    color: white;
+}
+
+.btn_holder {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .contact_session_btn {
@@ -367,11 +358,45 @@ main .btn:link, main .btn:visited, main .btn:hover, main .btn:active {
     justify-content: center;
     align-items: space-between;
     text-align: center;
+    background: fixed url("https://drscdn.500px.org/photo/1039207022/m%3D900/v2?sig=693296c3893d4c9c1188c7909b57706ebdf1d7acbdfef1987eedf1d6ecf11641") no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    z-index: 1;
 }
 
-    .session {
-        font-size: 1.15em !important;
-    }   
+#option_container {
+    background-color: hsla(0, 100%, 0%, 0.7);
+    color: white !important;
+    margin: 0;
+    z-index: 9;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+    .qa {
+        background-color: white;
+    }
+
+    .option {
+        margin: 0.5em 0 0.5em 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    main .anchor_btn:link, main .anchor_btn:visited, main .anchor_btn:active {
+        background-color: black;
+        color: white;
+    }
+
+    main .anchor_btn:hover {
+        background-color: #E8B130;
+    }
 
 .description {
     background-color: white;
@@ -408,6 +433,14 @@ main .btn:link, main .btn:visited, main .btn:hover, main .btn:active {
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
+
+    .btn_holder {
+        margin: 1em 30vw 1em 30vw;
+    }
+
+    .btn_holder .btn {
+        margin: 0;
+    }
     
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
@@ -416,42 +449,52 @@ main .btn:link, main .btn:visited, main .btn:hover, main .btn:active {
     .img_container-background_color img {
         display: none;
     }
+
+    #option_container {
+        min-height: 40vh;
+    }
+
+    .qa {
+        padding: 0 10vh;
+    }
     
     .img_container1 {
         visibility: visible;
         z-index: 3;
         background: url("https://drscdn.500px.org/photo/1045635699/m%3D900/v2?sig=1753cfcf81546c1aa9def1ad091dd00b503dd1747b7862ae62162dabe3ee7f7b") no-repeat fixed center;
-        background-size: auto 100%;
-        height: 100vh;
+        background-size: auto;
+        height: 90vh;
     }
     
     .img_container2 {
         visibility: visible;
         z-index: 3;
-        background: url("https://drscdn.500px.org/photo/1039045188/m%3D900/v2?sig=0e8a74242db59a6537a465791033e6fd6f0e74e6ba72698121bb4f216fdc9096") no-repeat fixed center;
-        background-size: auto 100%;
-        height: 100vh;
+        background: url("https://drscdn.500px.org/photo/1046885025/m%3D900/v2?sig=154996f3614aecd3ff71fdde779aa118d64e74fe570ece63ca11115e0c869c1c") no-repeat fixed center;
+        background-size: auto;
+        height: 90vh;
     }
     
     .img_container3 {
         visibility: visible;
         z-index: 3;
         background: url("https://drscdn.500px.org/photo/1039045179/m%3D900/v2?sig=3d54cd11f4676fa3ad2df3c2e8d68faf02e8454150a8d5ccee150775b9683296") no-repeat fixed center;
-        background-size: auto 100%;
-        height: 100vh;
+        background-size: auto;
+        height: 90vh;
     }
     
     .img_container4 {
         visibility: visible;
         background: url("https://drscdn.500px.org/photo/1039045219/m%3D900/v2?sig=182b563035d5ea5f19811e5d97045051316ab01326d80706b3741a6b95258d97") no-repeat fixed center;
-        background-size: auto 100%;
-        height: 100vh;
+        background-size: auto;
+        height: 90vh;
     }
         
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
-    
+    main {
+        background-color: white;
+    }
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
@@ -470,7 +513,6 @@ main .btn:link, main .btn:visited, main .btn:hover, main .btn:active {
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 
 .footer {
-    font-size: 1em;
     color: white;
     margin-top: 1em;
 }
@@ -508,7 +550,6 @@ main .btn:link, main .btn:visited, main .btn:hover, main .btn:active {
     padding-right: 1.5vw;
     padding-left: 1.5vw;
     text-align: center;
-    font-size: 1.8em;
     color: white;
   }
   
@@ -549,6 +590,27 @@ main .btn:link, main .btn:visited, main .btn:hover, main .btn:active {
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ OTHER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+html {
+    height: 100%;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+    background: black;
+}
+
+html::-webkit-scrollbar-button {
+    display: none;
+}
+
+html::-webkit-scrollbar-thumb {
+    background:#E8B130;
+    border-radius: 5px;
+}
+
+html::-webkit-scrollbar-track {
+    background: black;
+}
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
