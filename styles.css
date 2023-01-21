@@ -28,7 +28,7 @@
 body {
     position: relative;
     font-family: 'Cairo', sans-serif;
-    background: black url("https://drscdn.500px.org/photo/1058173890/m%3D900/v2?sig=8c9c51b742bfbcd4a2a98f340b75a1c2d70c4669215b479a7c37050bd31d78c0") no-repeat 10%/cover;
+    background: black url("https://drscdn.500px.org/photo/1058173890/m%3D900/v2?sig=8c9c51b742bfbcd4a2a98f340b75a1c2d70c4669215b479a7c37050bd31d78c0") local no-repeat 10%/cover;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -58,7 +58,7 @@ body {
 @media screen and (min-width: 576px) {
     
     body {
-        background: black url("https://drscdn.500px.org/photo/1058173957/m%3D900/v2?sig=fa13f593ce5049d6013b08b71004f1cdafb17a9509a9a803737bb2b0e81086e3") no-repeat center/cover;
+        background: url("https://drscdn.500px.org/photo/1057434294/m%3D900/v2?sig=2436428e873c7e0b4a40806382e4eedecc55957a33d4ab024aabf6c0eca66511") local no-repeat 20%/cover;
     }
 
     .btn:link, .btn:visited, .btn:active {
@@ -76,7 +76,7 @@ body {
 @media screen and (min-width: 768px) {
     
     body {
-        background: black url("https://drscdn.500px.org/photo/1058173923/m%3D900/v2?sig=e32003ff76774dc0e712a64471d49dbd4e449e507bb0d1b7cdfcf25dd1f442e4") no-repeat right/contain;
+        background: black url("https://drscdn.500px.org/photo/1058173923/m%3D900/v2?sig=e32003ff76774dc0e712a64471d49dbd4e449e507bb0d1b7cdfcf25dd1f442e4") local no-repeat right/contain;
     }
     
 }
@@ -84,7 +84,7 @@ body {
 @media screen and (min-width: 992px) {
     body {
         overflow-y: initial;
-        background: black url("https://drscdn.500px.org/photo/1058173896/m%3D900/v2?sig=a07a9a9d380f7fdc568518f26a9d94fa86b949d2cbb1d6f8e05bedbf3bd6256d") no-repeat center/cover;
+        background: black url("https://drscdn.500px.org/photo/1058173896/m%3D900/v2?sig=a07a9a9d380f7fdc568518f26a9d94fa86b949d2cbb1d6f8e05bedbf3bd6256d") local no-repeat center/cover;
     }
     
 }
