@@ -205,69 +205,7 @@ main {
     align-content: center;
 }
 
-#about {
-    background-image: url("https://drscdn.500px.org/photo/1056477944/m%3D900/v2?sig=34af6b6a6e60d826a8dfde5048007e5034f9e25cc26d75d1904e062b60739e35");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: local;
-    margin: 0;
-    padding: 0;
-}
-
-#about_background_opacity {
-    background-color: hsla(255, 100%, 0%, 0.4);
-    height: 100%;
-    padding: 5vh 5vw 0 5vw;
-    margin: 0;
-}
-
-.about_section {
-    padding-left: 5vw;
-    margin: 5vh 0 5vh 0;
-    border-left: solid white;
-}
-
-.about_section p {
-    text-indent: 1.5em;
-}
-
-.testimonial {
-    padding: 0;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: local;
-    background-image: url("https://drscdn.500px.org/photo/1058173946/m%3D900/v2?sig=df93b34a5f9d3550163d9e6f3e002fce3a1389ebd76f9d8769bcd64058c4723b");
-}
-
-.text_container {
-    margin: 0;
-    padding: 5vh 2vw;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-    background-color: hsla(255, 100%, 0%, 0.4);
-}
-
-    #Lucie_P {
-        text-align: left; 
-        justify-content: flex-start;       
-    }
-
-.text {
-    padding: 0;
-    margin: 0;
-    font-size: 2em;
-}
-
-.client {
-    padding: 0;
-    margin: 0;
-    font-size: 2em;
-    font-weight: bold;
-    color: #e8b130;
+#jotform {
 }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/

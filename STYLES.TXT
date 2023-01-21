@@ -1,8 +1,0 @@
-
-font-family: 'Lora', serif;
-
-Black #000000
-White #FFFFFF
-Goldenrod #E8B130  
-Rufous #A80C0C
-

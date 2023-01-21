@@ -15,7 +15,6 @@
 
 
 
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -32,7 +31,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Lora&display=swap" rel="stylesheet">    
 
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/81b7f058ce.js" crossorigin="anonymous"></script>
 
     <!-- Link to your custom stylesheet. Any non-Bootstrap styles you create go in this stylesheet. You can create new classes and IDs, or add new rules for classes that already exist in Bootstrap. Any rules you put in your custom stylesheet will override any styling applied to any elements of the same name in Bootstrap, as long as your custom stylesheet link comes AFTER your Bootstrap CSS link, the way it does here. -->
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -47,7 +46,7 @@
 <body class="container-fluid">
     <div id="slideshow"></div>
     <header class="row pt-2 pb-2">
-        <article class="col-12 col-sm-5 sig-box">
+        <article class="col-12 col-sm-5 col-md-4 sig-box">
             <img class="sig" src="white_signature.png" onMouseDown="popupMsg('Copyright Stephen Wenzel ©2021')">
             <p class="col-12 col-sm-12">PHOTOGRAPHY</p>
         </article>
@@ -60,21 +59,27 @@
                     <li class="col-12 col-sm-12 nav-item active">
                         <a class="nav-link" href="index.html">Home</a> <!--DON"T USE THE BACKSLASH AT THE FRONT!-->
                     </li>
-                    <li class="col-12 col-sm-12 nav-item">
-                        <a class="nav-link" href="sessions.html">Sessions</a>
-                    </li>
-                    <li class="col-12 col-sm-12 nav-item">
-                        <a class="nav-link" href="https://stephenwenzelphotography.pixieset.com/portfolio/">Portfolio</a>
-                    </li>
-                    <!--This one is just a link to another website hosted elsewhere.-->
-                    <li class="col-12 col-sm-12 nav-item">
-                        <a class="nav-link" href="https://stephenwenzelphotography.pixieset.com/" target="_blank">Galleries</a>
-                    </li>
+
+                    <!--
                     <li class="col-12 col-sm-12 nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
+                    -->
                     <li class="col-12 col-sm-12 nav-item">
-                        <a class="nav-link" href="https://form.jotform.com/221043959027051">Contact</a>
+                        <a class="nav-link" href="https://form.jotform.com/221043959027051">Schedule/Contact</a>
+                    </li>
+                    <li class="col-12 col-sm-12 nav-item">
+                        <a class="nav-link" href="https://500px.com/p/stephenwenzelphotography/galleries/portraits-2">Portraits <i class="fa-solid fa-user-large"></i></a>
+                    </li>
+                    <li class="col-12 col-sm-12 nav-item">
+                        <a class="nav-link" href="https://500px.com/p/stephenwenzelphotography/galleries/landscapes-3">Landscapes <i class="fa-solid fa-mountain-sun"></i></a>
+                    </li>
+                    <li class="col-12 col-sm-12 nav-item">
+                        <a class="nav-link" href="https://500px.com/p/stephenwenzelphotography/galleries/wildlife-2">Wildlife <i class="fa-solid fa-dove"></i></i></a>
+                    </li>
+                    <!--This one is just a link to another website hosted elsewhere.-->
+                    <li class="col-12 col-sm-12 nav-item">
+                        <a class="nav-link" href="https://stephenwenzelphotography.pixieset.com/" target="_blank">Client Galleries</a>
                     </li>
                 </ul>
             </nav>
@@ -84,15 +89,14 @@
     <footer class="row footer pt-3 pb-3">
         <section class="col-12 col-sm-12 footer-content">
             <article class="col-12 col-sm-12 col-md-12 footer-info">
-                <p class="col-12 col-sm-12">North Carolina Photographer since 2015</p>
-                <p class="col-12 col-sm-12">Programmed by Stephen Wenzel ©2022</p>
+                <p class="col-12 col-sm-12">North Carolina Photographer since 2016</p>
+                <p class="col-12 col-sm-12">Programmed by Stephen Wenzel ©2023</p>
             </article>
             <article class="footer-social_media col-12 col-sm-12 col-md-12">
                 <a href="https://500px.com/p/stephenwenzelphotography?view=photos" target="_blank"><i id="500px" class="fab fa-500px"></i></a>
                 <a href="https://www.instagram.com/stephenwenzelphotography/" target="_blank"><i id="Instagram" class="fab fa-instagram"></i></a>
                 <a href="https://www.facebook.com/stephenwenzelphotography/" target="_blank"><i id="Facebook" class="fab fa-facebook-square"></i></a>
                 <a href="https://www.pinterest.com/stephenwenzelphotography/_saved/" target="_blank"><i id="Pinterest" class="fab fa-pinterest-square"></i></a>
-                <a href="nature.html" target="_blank"><i class="fas fa-mountain"></i></a>
             </article>
         </section>
     </footer>

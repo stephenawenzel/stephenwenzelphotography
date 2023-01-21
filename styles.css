@@ -28,7 +28,7 @@
 body {
     position: relative;
     font-family: 'Cairo', sans-serif;
-    background-color: black;
+    background: black url("https://drscdn.500px.org/photo/1058173890/m%3D900/v2?sig=8c9c51b742bfbcd4a2a98f340b75a1c2d70c4669215b479a7c37050bd31d78c0") no-repeat 10%/cover;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -54,43 +54,12 @@ body {
     border: none;
 }
 
-
-#slideshow {
-    animation-name: open;
-    animation-duration: 50s;
-    animation-iteration-count: infinite;
-    /*
-        cubic-bezier([time on first], [transition to second], [time on second], [transition from halfway]) 
-    */
-    animation-timing-function:cubic-bezier(0.7,0,0.3,1);
-    animation-delay: 0;
-    background-blend-mode: multiply;
-    position: absolute;
-    opacity: 0.9;
-    top: 0;
-    height: 100%;
-    width: 75%;
-    background-size: 90% auto !important;
-}
-
-/*
-    alex sam lucie dylan rachel wedding tyrell kelly mcrae
-*/
-
-@keyframes open {
-    0% {background: url("https://drscdn.500px.org/photo/1038667203/m%3D900/v2?sig=d8526e4c77606dad9588431d39fcefec9046633011205cf6573433016ad795e5") no-repeat local center;}
-    12.5% {background: url("https://drscdn.500px.org/photo/1045635699/m%3D900/v2?sig=1753cfcf81546c1aa9def1ad091dd00b503dd1747b7862ae62162dabe3ee7f7b") no-repeat local center;}
-    25% {background: url("https://drscdn.500px.org/photo/1038667205/m%3D900/v2?sig=78d850bbc44ba127ea5fab7d7158bbe8ef90c421042930a43316602d0a4637ed") no-repeat local center;}
-    37.5% {background: url("https://drscdn.500px.org/photo/1039045208/m%3D900/v2?sig=42caf12e46e177569ad25afb84a84825316b9129bfcca16b422da280e1928807") no-repeat local center;}
-    50% {background: url("https://drscdn.500px.org/photo/1038667204/m%3D900/v2?sig=7e034e0ff0f557502474029afcaa4ae58736d94d33c93a97e127b441333c122b") no-repeat local center;}
-    62.5% {background: url("https://drscdn.500px.org/photo/1038667202/m%3D900/v2?sig=a923b7b8b9558aef839e1a7ff8f356fb5d67fc169d4146ca01b72623206702c1") no-repeat local center;}
-    75% {background: url("https://drscdn.500px.org/photo/1039045179/m%3D900/v2?sig=3d54cd11f4676fa3ad2df3c2e8d68faf02e8454150a8d5ccee150775b9683296") no-repeat local center;}
-    87.5% {background: url("https://drscdn.500px.org/photo/1046885025/m%3D900/v2?sig=154996f3614aecd3ff71fdde779aa118d64e74fe570ece63ca11115e0c869c1c") no-repeat local center;}
-    100% {background: url("https://drscdn.500px.org/photo/1039045219/m%3D900/v2?sig=182b563035d5ea5f19811e5d97045051316ab01326d80706b3741a6b95258d97") no-repeat local center;}
-}
-
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
+    
+    body {
+        background: black url("https://drscdn.500px.org/photo/1058173957/m%3D900/v2?sig=fa13f593ce5049d6013b08b71004f1cdafb17a9509a9a803737bb2b0e81086e3") no-repeat center/cover;
+    }
 
     .btn:link, .btn:visited, .btn:active {
         background-color: black;
@@ -105,38 +74,27 @@ body {
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
-
-    #slideshow {
-        width: 75%;
+    
+    body {
+        background: black url("https://drscdn.500px.org/photo/1058173923/m%3D900/v2?sig=e32003ff76774dc0e712a64471d49dbd4e449e507bb0d1b7cdfcf25dd1f442e4") no-repeat right/contain;
     }
-        
+    
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
     body {
         overflow-y: initial;
+        background: black url("https://drscdn.500px.org/photo/1058173896/m%3D900/v2?sig=a07a9a9d380f7fdc568518f26a9d94fa86b949d2cbb1d6f8e05bedbf3bd6256d") no-repeat center/cover;
     }
-
-    #slideshow {
-        width: 50%;
-        opacity: 1;
-    }
+    
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
-
-    #slideshow {
-        width: 40%;
-    }
     
 }
 /*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
 @media screen and (min-width: 1400px) {
-
-    #slideshow {
-        width: 33%;
-    }
-
+    
 }
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ HEADER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
@@ -154,7 +112,7 @@ header {
     margin-top: 5vh;
     top: 0;
     border-left: solid white 0.1vw;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
     .sig-box {
@@ -163,7 +121,7 @@ header {
         justify-content: flex-start;
         align-items: center;
         height: 4.5em;
-        margin-bottom: 3em;
+        margin-bottom: 1em;
     }
 
         .sig {
@@ -171,16 +129,15 @@ header {
         }
 
         .sig-box p {
-            font-weight: bold;
             padding: 0;
             text-align: left;
-            font-size: 0.8em !important;
         }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
     header {
         border-left: solid white 0.1vw;
+        margin-top: 2vh;
     }
 
     header .btn:link, header .btn:visited, header .btn:active {
@@ -194,6 +151,8 @@ header {
 
     .sig-box {
         justify-content: center;
+        padding: 0;
+        margin-left: 1.1vw;
     }
 
     .sig-box p {
@@ -216,17 +175,24 @@ header {
 /*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
 @media screen and (min-width: 1400px) {
 
+    header {
+        margin-top: 5vh;
+    }
+
     .sig-box {
-        height: 7em;
         margin-bottom: 3em;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
     }
 
         .sig {
-            max-height: 5em;
+            max-height: 3em;
         }
 
         .sig-box p {
-            font-size: 1.2em !important;
+            font-size: 1em !important;
+            text-align: left;
         }
 
 }
@@ -248,10 +214,6 @@ header {
     align-items: center;
 }
 
-.active a {
-    color: #E8B130 !important;
-}
-
 .navbar-collapse {
     padding: 0;
 }
@@ -268,20 +230,27 @@ header {
         color: white;
         text-align: left;
         padding: 1.1vh 0 0 0;
+        width: 50%;
     }
 
 /*
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
-    
+        
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
+
+    .nav-item a:link, .nav-item a:visited, .nav-item a:hover, .nav-item a:active{
+        width: 30%;
+    }
         
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) { 
-
+    .nav-item a:link, .nav-item a:visited, .nav-item a:hover, .nav-item a:active{
+        width: 25%;
+    }
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
@@ -289,6 +258,13 @@ header {
 }
 /*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
 @media screen and (min-width: 1400px) {
+    .nav-item a:link, .nav-item a:visited, .nav-item a:hover, .nav-item a:active{
+        width: 20%;
+    }
+
+    .nav-item {
+        font-size: 1.1em;
+    }
 
 }
 /*====================================================== SOCIAL MEDIA AND CONTACT =======================================================*/
@@ -355,7 +331,7 @@ header {
     position: fixed;
     right: 8vw;
     bottom: 0;
-    border-right: solid white 0.1vw;
+    border-left: solid white 0.1vw;
     font-size: 0.9em;
     margin-bottom: 5vh;
 }
@@ -363,18 +339,21 @@ header {
 .footer-content {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .footer-info {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
-    text-align: right;
-    padding: 0;
+    padding: 1.1vh 0 0 0;
 }
+
+    .footer-info p {
+        padding: 0;
+    }
 
 .footer-button {
     display: flex;
@@ -388,7 +367,7 @@ header {
     position: relative;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
     padding: 0;
     align-content: center;
     font-size: 1.1em;
@@ -416,6 +395,26 @@ header {
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
 
+    .footer {
+        right: 8vw;
+        border-right: solid white 0.1vw;
+        border-left: none;
+        bottom: 0;
+    }
+
+    .footer-content {
+        justify-content: flex-end;
+    }
+
+    .footer-info {
+        justify-content: flex-end;
+        text-align: right;
+    }
+
+    .footer-social_media {
+        justify-content: flex-end;
+    }
+
     footer {
         bottom: 0;
         position: absolute;
@@ -426,9 +425,48 @@ header {
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
 
+    .footer {
+        border-left: solid white 0.1vw;
+        border-right: none;
+        bottom: 0;
+    }
+
+    .footer-content {
+        justify-content: flex-start;
+    }
+
+    .footer-info {
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .footer-social_media {
+        justify-content: flex-start;
+    }
+
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
+
+    .footer {
+        right: 8vw;
+        border-right: solid white 0.1vw;
+        border-left: none;
+        bottom: 0;
+    }
+
+    .footer-content {
+        justify-content: flex-end;
+    }
+
+    .footer-info {
+        justify-content: flex-end;
+        text-align: right;
+    }
+
+    .footer-social_media {
+        justify-content: flex-end;
+    }
 
     .footer-social_media {
         position:relative;
@@ -466,7 +504,7 @@ header {
 /*[END] -------- ENORMOUS SCREENS (COL-XXL-) ----------------------*/
 @media screen and (min-width: 1400px) {
     
-      .footer-social_media i {
+    .footer-social_media i {
         padding-top: 1vh;
         padding-bottom: 1vh;
         padding-right: 1vw;
@@ -474,7 +512,12 @@ header {
         text-align: center;
         color: white;
         font-size: 1.1em;
-      }
+    }
+
+    .footer {
+        margin-bottom: 5vh;
+        font-size: 1.1em;
+    }
 
 }
 
