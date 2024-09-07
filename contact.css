@@ -205,9 +205,6 @@ main {
     align-content: center;
 }
 
-#jotform {
-}
-
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
     
